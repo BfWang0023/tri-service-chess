@@ -1,0 +1,471 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="1200" viewBox="0 0 850 1200">
+<title>雷鸟牌三军战斗棋 · 2010.031.0527.0002 · 矢量图</title>
+<desc>红色为公路，金色为铁路，蓝色为海军，绿色为空军，紫色为按项目裁决采用的推定要素。来源为国立台湾历史博物馆。</desc>
+<rect width="850" height="1200" fill="#132b36"/><rect width="850" height="1200" fill="#213f46"/><rect y="397" width="850" height="418" fill="#19465b"/>
+<g id="G_land" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="172.00,50.00 108.00,113.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-1~N1-1 · road · verified</title></polyline>
+<polyline points="172.00,50.00 235.00,113.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-1~N1-2 · road · verified</title></polyline>
+<polyline points="297.00,51.00 235.00,113.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-2~N1-2 · road · verified</title></polyline>
+<polyline points="297.00,51.00 361.00,112.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-2~N1-3 · road · verified</title></polyline>
+<polyline points="425.00,51.00 361.00,112.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-3~N1-3 · road · verified</title></polyline>
+<polyline points="425.00,51.00 489.00,109.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-3~N1-4 · road · verified</title></polyline>
+<polyline points="552.00,50.00 489.00,109.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-4~N1-4 · road · verified</title></polyline>
+<polyline points="552.00,50.00 614.00,115.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-4~N1-5 · road · verified</title></polyline>
+<polyline points="678.00,51.00 614.00,115.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-5~N1-5 · road · verified</title></polyline>
+<polyline points="678.00,51.00 741.00,114.00" stroke="#e85052" stroke-width="2.5"><title>road:N0-5~N1-6 · road · verified</title></polyline>
+<polyline points="108.00,113.00 43.00,187.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-1~N2-1 · road · verified</title></polyline>
+<polyline points="108.00,113.00 171.00,185.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-1~N2-2 · road · verified</title></polyline>
+<polyline points="235.00,113.00 171.00,185.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-2~N2-2 · road · verified</title></polyline>
+<polyline points="235.00,113.00 298.00,185.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-2~N2-3 · road · verified</title></polyline>
+<polyline points="361.00,112.00 298.00,185.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-3~N2-3 · road · verified</title></polyline>
+<polyline points="361.00,112.00 426.00,185.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-3~N2-4 · road · verified</title></polyline>
+<polyline points="489.00,109.00 426.00,185.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-4~N2-4 · road · verified</title></polyline>
+<polyline points="489.00,109.00 555.00,187.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-4~N2-5 · road · verified</title></polyline>
+<polyline points="614.00,115.00 555.00,187.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-5~N2-5 · road · verified</title></polyline>
+<polyline points="614.00,115.00 678.00,188.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-5~N2-6 · road · verified</title></polyline>
+<polyline points="741.00,114.00 678.00,188.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-6~N2-6 · road · verified</title></polyline>
+<polyline points="741.00,114.00 811.00,188.00" stroke="#e85052" stroke-width="2.5"><title>road:N1-6~N2-7 · road · verified</title></polyline>
+<polyline points="43.00,187.00 108.00,254.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-1~N3-1 · road · verified</title></polyline>
+<polyline points="171.00,185.00 108.00,254.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-2~N3-1 · road · verified</title></polyline>
+<polyline points="171.00,185.00 230.00,260.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-2~N3-2 · road · verified</title></polyline>
+<polyline points="298.00,185.00 230.00,260.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-3~N3-2 · road · verified</title></polyline>
+<polyline points="298.00,185.00 360.00,261.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-3~N3-3 · road · verified</title></polyline>
+<polyline points="426.00,185.00 360.00,261.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-4~N3-3 · road · verified</title></polyline>
+<polyline points="426.00,185.00 488.00,260.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-4~N3-4 · road · verified</title></polyline>
+<polyline points="555.00,187.00 488.00,260.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-5~N3-4 · road · verified</title></polyline>
+<polyline points="555.00,187.00 616.00,261.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-5~N3-5 · road · verified</title></polyline>
+<polyline points="678.00,188.00 616.00,261.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-6~N3-5 · road · verified</title></polyline>
+<polyline points="678.00,188.00 741.00,256.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-6~N3-6 · road · verified</title></polyline>
+<polyline points="811.00,188.00 741.00,256.00" stroke="#e85052" stroke-width="2.5"><title>road:N2-7~N3-6 · road · verified</title></polyline>
+<polyline points="108.00,254.00 40.00,328.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-1~N4-1 · road · verified</title></polyline>
+<polyline points="108.00,254.00 169.00,327.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-1~N4-2 · road · verified</title></polyline>
+<polyline points="230.00,260.00 294.00,326.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-2~N4-3 · road · verified</title></polyline>
+<polyline points="360.00,261.00 294.00,326.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-3~N4-3 · road · verified</title></polyline>
+<polyline points="360.00,261.00 427.00,326.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-3~N4-4 · road · verified</title></polyline>
+<polyline points="488.00,260.00 427.00,326.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-4~N4-4 · road · verified</title></polyline>
+<polyline points="488.00,260.00 558.00,324.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-4~N4-5 · road · verified</title></polyline>
+<polyline points="616.00,261.00 558.00,324.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-5~N4-5 · road · verified</title></polyline>
+<polyline points="741.00,256.00 681.00,327.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-6~N4-6 · road · verified</title></polyline>
+<polyline points="741.00,256.00 812.00,328.00" stroke="#e85052" stroke-width="2.5"><title>road:N3-6~N4-7 · road · verified</title></polyline>
+<polyline points="40.00,328.00 111.00,393.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-1~N5-1 · road · verified</title></polyline>
+<polyline points="169.00,327.00 226.00,395.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-2~N5-2 · road · verified</title></polyline>
+<polyline points="294.00,326.00 226.00,395.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-3~N5-2 · road · verified</title></polyline>
+<polyline points="294.00,326.00 357.00,394.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-3~N5-3 · road · verified</title></polyline>
+<polyline points="427.00,326.00 357.00,394.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-4~N5-3 · road · verified</title></polyline>
+<polyline points="427.00,326.00 488.00,394.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-4~N5-4 · road · verified</title></polyline>
+<polyline points="558.00,324.00 488.00,394.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-5~N5-4 · road · verified</title></polyline>
+<polyline points="558.00,324.00 617.00,393.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-5~N5-5 · road · verified</title></polyline>
+<polyline points="681.00,327.00 617.00,393.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-6~N5-5 · road · verified</title></polyline>
+<polyline points="812.00,328.00 740.00,392.00" stroke="#e85052" stroke-width="2.5"><title>road:N4-7~N5-6 · road · verified</title></polyline>
+<polyline points="174.00,1142.00 108.00,1084.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-1~S1-1 · road · verified</title></polyline>
+<polyline points="174.00,1142.00 233.00,1083.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-1~S1-2 · road · verified</title></polyline>
+<polyline points="298.00,1142.00 233.00,1083.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-2~S1-2 · road · verified</title></polyline>
+<polyline points="298.00,1142.00 359.00,1086.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-2~S1-3 · road · verified</title></polyline>
+<polyline points="421.00,1143.00 359.00,1086.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-3~S1-3 · road · verified</title></polyline>
+<polyline points="421.00,1143.00 487.00,1087.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-3~S1-4 · road · verified</title></polyline>
+<polyline points="547.00,1146.00 487.00,1087.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-4~S1-4 · road · verified</title></polyline>
+<polyline points="547.00,1146.00 614.00,1092.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>road:S0-4~S1-5 · road · provisional</title></polyline>
+<polyline points="671.00,1149.00 614.00,1092.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-5~S1-5 · road · verified</title></polyline>
+<polyline points="671.00,1149.00 738.00,1089.00" stroke="#e85052" stroke-width="2.5"><title>road:S0-5~S1-6 · road · verified</title></polyline>
+<polyline points="108.00,1084.00 34.00,1017.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-1~S2-1 · road · verified</title></polyline>
+<polyline points="108.00,1084.00 165.00,1018.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-1~S2-2 · road · verified</title></polyline>
+<polyline points="233.00,1083.00 165.00,1018.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-2~S2-2 · road · verified</title></polyline>
+<polyline points="233.00,1083.00 292.00,1020.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-2~S2-3 · road · verified</title></polyline>
+<polyline points="359.00,1086.00 292.00,1020.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-3~S2-3 · road · verified</title></polyline>
+<polyline points="359.00,1086.00 421.00,1021.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-3~S2-4 · road · verified</title></polyline>
+<polyline points="487.00,1087.00 421.00,1021.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-4~S2-4 · road · verified</title></polyline>
+<polyline points="487.00,1087.00 552.00,1023.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-4~S2-5 · road · verified</title></polyline>
+<polyline points="614.00,1092.00 552.00,1023.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-5~S2-5 · road · verified</title></polyline>
+<polyline points="614.00,1092.00 682.00,1026.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-5~S2-6 · road · verified</title></polyline>
+<polyline points="738.00,1089.00 682.00,1026.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-6~S2-6 · road · verified</title></polyline>
+<polyline points="738.00,1089.00 813.00,1027.00" stroke="#e85052" stroke-width="2.5"><title>road:S1-6~S2-7 · road · verified</title></polyline>
+<polyline points="34.00,1017.00 108.00,950.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-1~S3-1 · road · verified</title></polyline>
+<polyline points="165.00,1018.00 108.00,950.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-2~S3-1 · road · verified</title></polyline>
+<polyline points="165.00,1018.00 232.00,948.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-2~S3-2 · road · verified</title></polyline>
+<polyline points="292.00,1020.00 232.00,948.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-3~S3-2 · road · verified</title></polyline>
+<polyline points="292.00,1020.00 363.00,950.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-3~S3-3 · road · verified</title></polyline>
+<polyline points="421.00,1021.00 363.00,950.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-4~S3-3 · road · verified</title></polyline>
+<polyline points="421.00,1021.00 490.00,952.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-4~S3-4 · road · verified</title></polyline>
+<polyline points="552.00,1023.00 490.00,952.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-5~S3-4 · road · verified</title></polyline>
+<polyline points="552.00,1023.00 618.00,951.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-5~S3-5 · road · verified</title></polyline>
+<polyline points="682.00,1026.00 618.00,951.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-6~S3-5 · road · verified</title></polyline>
+<polyline points="682.00,1026.00 743.00,956.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-6~S3-6 · road · verified</title></polyline>
+<polyline points="813.00,1027.00 743.00,956.00" stroke="#e85052" stroke-width="2.5"><title>road:S2-7~S3-6 · road · verified</title></polyline>
+<polyline points="108.00,950.00 40.00,881.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-1~S4-1 · road · verified</title></polyline>
+<polyline points="108.00,950.00 168.00,882.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-1~S4-2 · road · verified</title></polyline>
+<polyline points="232.00,948.00 294.00,881.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-2~S4-3 · road · verified</title></polyline>
+<polyline points="363.00,950.00 294.00,881.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-3~S4-3 · road · verified</title></polyline>
+<polyline points="363.00,950.00 426.00,881.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-3~S4-4 · road · verified</title></polyline>
+<polyline points="490.00,952.00 426.00,881.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-4~S4-4 · road · verified</title></polyline>
+<polyline points="490.00,952.00 556.00,883.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-4~S4-5 · road · verified</title></polyline>
+<polyline points="618.00,951.00 556.00,883.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-5~S4-5 · road · verified</title></polyline>
+<polyline points="743.00,956.00 678.00,884.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-6~S4-6 · road · verified</title></polyline>
+<polyline points="743.00,956.00 810.00,883.00" stroke="#e85052" stroke-width="2.5"><title>road:S3-6~S4-7 · road · verified</title></polyline>
+<polyline points="40.00,881.00 113.00,811.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-1~S5-1 · road · verified</title></polyline>
+<polyline points="168.00,882.00 237.00,816.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-2~S5-2 · road · verified</title></polyline>
+<polyline points="294.00,881.00 237.00,816.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-3~S5-2 · road · verified</title></polyline>
+<polyline points="294.00,881.00 363.00,817.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-3~S5-3 · road · verified</title></polyline>
+<polyline points="426.00,881.00 363.00,817.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-4~S5-3 · road · verified</title></polyline>
+<polyline points="426.00,881.00 491.00,817.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-4~S5-4 · road · verified</title></polyline>
+<polyline points="556.00,883.00 491.00,817.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-5~S5-4 · road · verified</title></polyline>
+<polyline points="556.00,883.00 619.00,818.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-5~S5-5 · road · verified</title></polyline>
+<polyline points="678.00,884.00 619.00,818.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-6~S5-5 · road · verified</title></polyline>
+<polyline points="810.00,883.00 738.00,814.00" stroke="#e85052" stroke-width="2.5"><title>road:S4-7~S5-6 · road · verified</title></polyline>
+</g>
+<g id="G_rail" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="111.00,393.00 169.00,327.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:N5-1~N4-2 · railway · verified</title></polyline>
+<polyline points="169.00,327.00 230.00,260.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:N4-2~N3-2 · railway · verified</title></polyline>
+<polyline points="230.00,260.00 360.00,261.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:N3-2~N3-3 · railway · verified</title></polyline>
+<polyline points="360.00,261.00 488.00,260.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:N3-3~N3-4 · railway · verified</title></polyline>
+<polyline points="488.00,260.00 616.00,261.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:N3-4~N3-5 · railway · verified</title></polyline>
+<polyline points="616.00,261.00 681.00,327.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:N3-5~N4-6 · railway · verified</title></polyline>
+<polyline points="681.00,327.00 740.00,392.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:N4-6~N5-6 · railway · verified</title></polyline>
+<polyline points="113.00,811.00 168.00,882.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:S5-1~S4-2 · railway · verified</title></polyline>
+<polyline points="168.00,882.00 232.00,948.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:S4-2~S3-2 · railway · verified</title></polyline>
+<polyline points="232.00,948.00 363.00,950.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:S3-2~S3-3 · railway · verified</title></polyline>
+<polyline points="363.00,950.00 490.00,952.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:S3-3~S3-4 · railway · verified</title></polyline>
+<polyline points="490.00,952.00 618.00,951.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:S3-4~S3-5 · railway · verified</title></polyline>
+<polyline points="618.00,951.00 678.00,884.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:S3-5~S4-6 · railway · verified</title></polyline>
+<polyline points="678.00,884.00 738.00,814.00" stroke="#eaba4c" stroke-width="2.5"><title>railway:S4-6~S5-6 · railway · verified</title></polyline>
+<polyline points="111.00,393.00 115.00,535.00 118.00,603.00 121.00,674.00 113.00,811.00" stroke="#eaba4c" stroke-width="2.5"><title>bridge:N5-1~S5-1 · bridge · verified</title></polyline>
+<polyline points="740.00,392.00 738.00,533.00 738.00,605.00 738.00,675.00 738.00,814.00" stroke="#eaba4c" stroke-width="2.5"><title>bridge:N5-6~S5-6 · bridge · verified</title></polyline>
+</g>
+<g id="G_sea" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="166.00,469.00 234.00,537.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-2~M1-1 · sea_lane · verified</title></polyline>
+<polyline points="295.00,469.00 234.00,537.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-3~M1-1 · sea_lane · verified</title></polyline>
+<polyline points="295.00,469.00 362.00,539.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-3~M1-2 · sea_lane · verified</title></polyline>
+<polyline points="429.00,466.00 362.00,539.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-4~M1-2 · sea_lane · verified</title></polyline>
+<polyline points="429.00,466.00 491.00,538.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-4~M1-3 · sea_lane · verified</title></polyline>
+<polyline points="562.00,465.00 491.00,538.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-5~M1-3 · sea_lane · verified</title></polyline>
+<polyline points="562.00,465.00 618.00,534.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-5~M1-4 · sea_lane · verified</title></polyline>
+<polyline points="686.00,465.00 618.00,534.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M0-6~M1-4 · sea_lane · verified</title></polyline>
+<polyline points="234.00,537.00 166.00,605.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-1~M2-2 · sea_lane · verified</title></polyline>
+<polyline points="234.00,537.00 297.00,605.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-1~M2-3 · sea_lane · verified</title></polyline>
+<polyline points="362.00,539.00 297.00,605.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-2~M2-3 · sea_lane · verified</title></polyline>
+<polyline points="362.00,539.00 427.00,604.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-2~M2-4 · sea_lane · verified</title></polyline>
+<polyline points="491.00,538.00 427.00,604.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-3~M2-4 · sea_lane · verified</title></polyline>
+<polyline points="491.00,538.00 560.00,605.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-3~M2-5 · sea_lane · verified</title></polyline>
+<polyline points="618.00,534.00 560.00,605.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-4~M2-5 · sea_lane · verified</title></polyline>
+<polyline points="618.00,534.00 688.00,605.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M1-4~M2-6 · sea_lane · verified</title></polyline>
+<polyline points="166.00,605.00 238.00,674.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-2~M3-1 · sea_lane · verified</title></polyline>
+<polyline points="297.00,605.00 238.00,674.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-3~M3-1 · sea_lane · verified</title></polyline>
+<polyline points="297.00,605.00 365.00,673.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-3~M3-2 · sea_lane · verified</title></polyline>
+<polyline points="427.00,604.00 365.00,673.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-4~M3-2 · sea_lane · verified</title></polyline>
+<polyline points="427.00,604.00 494.00,674.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-4~M3-3 · sea_lane · verified</title></polyline>
+<polyline points="560.00,605.00 494.00,674.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-5~M3-3 · sea_lane · verified</title></polyline>
+<polyline points="560.00,605.00 620.00,676.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-5~M3-4 · sea_lane · verified</title></polyline>
+<polyline points="688.00,605.00 620.00,676.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M2-6~M3-4 · sea_lane · verified</title></polyline>
+<polyline points="238.00,674.00 170.00,741.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-1~M4-2 · sea_lane · verified</title></polyline>
+<polyline points="238.00,674.00 295.00,742.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-1~M4-3 · sea_lane · verified</title></polyline>
+<polyline points="365.00,673.00 295.00,742.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-2~M4-3 · sea_lane · verified</title></polyline>
+<polyline points="365.00,673.00 427.00,743.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-2~M4-4 · sea_lane · verified</title></polyline>
+<polyline points="494.00,674.00 427.00,743.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-3~M4-4 · sea_lane · verified</title></polyline>
+<polyline points="494.00,674.00 560.00,744.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-3~M4-5 · sea_lane · verified</title></polyline>
+<polyline points="620.00,676.00 560.00,744.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-4~M4-5 · sea_lane · verified</title></polyline>
+<polyline points="620.00,676.00 684.00,744.00" stroke="#49ddf1" stroke-width="2.5"><title>sea_lane:M3-4~M4-6 · sea_lane · verified</title></polyline>
+<polyline points="39.00,470.00 112.00,536.00 166.00,605.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M0-1~M2-2 · sea_lane · provisional</title></polyline>
+<polyline points="166.00,469.00 112.00,536.00 40.00,604.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M0-2~M2-1 · sea_lane · provisional</title></polyline>
+<polyline points="40.00,604.00 118.00,675.00 170.00,741.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M2-1~M4-2 · sea_lane · provisional</title></polyline>
+<polyline points="166.00,605.00 118.00,675.00 41.00,740.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M2-2~M4-1 · sea_lane · provisional</title></polyline>
+<polyline points="39.00,470.00 112.00,470.00 166.00,469.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M0-1~M0-2 · sea_lane · provisional</title></polyline>
+<polyline points="41.00,740.00 120.00,741.00 170.00,741.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M4-1~M4-2 · sea_lane · provisional</title></polyline>
+<polyline points="815.00,465.00 740.00,533.00 688.00,605.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M0-7~M2-6 · sea_lane · provisional</title></polyline>
+<polyline points="686.00,465.00 740.00,533.00 813.00,605.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M0-6~M2-7 · sea_lane · provisional</title></polyline>
+<polyline points="813.00,605.00 739.00,676.00 684.00,744.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M2-7~M4-6 · sea_lane · provisional</title></polyline>
+<polyline points="688.00,605.00 739.00,676.00 816.00,745.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M2-6~M4-7 · sea_lane · provisional</title></polyline>
+<polyline points="816.00,745.00 739.00,744.00 684.00,744.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>sea_lane:M4-7~M4-6 · sea_lane · provisional</title></polyline>
+<polyline points="166.00,469.00 226.00,395.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-2~N5-2 · sea_coastal_spur · verified</title></polyline>
+<polyline points="295.00,469.00 226.00,395.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-3~N5-2 · sea_coastal_spur · verified</title></polyline>
+<polyline points="295.00,469.00 357.00,394.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-3~N5-3 · sea_coastal_spur · verified</title></polyline>
+<polyline points="429.00,466.00 357.00,394.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-4~N5-3 · sea_coastal_spur · verified</title></polyline>
+<polyline points="429.00,466.00 488.00,394.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-4~N5-4 · sea_coastal_spur · verified</title></polyline>
+<polyline points="562.00,465.00 488.00,394.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-5~N5-4 · sea_coastal_spur · verified</title></polyline>
+<polyline points="562.00,465.00 617.00,393.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-5~N5-5 · sea_coastal_spur · verified</title></polyline>
+<polyline points="686.00,465.00 617.00,393.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M0-6~N5-5 · sea_coastal_spur · verified</title></polyline>
+<polyline points="170.00,741.00 237.00,816.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-2~S5-2 · sea_coastal_spur · verified</title></polyline>
+<polyline points="295.00,742.00 237.00,816.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-3~S5-2 · sea_coastal_spur · verified</title></polyline>
+<polyline points="295.00,742.00 363.00,817.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-3~S5-3 · sea_coastal_spur · verified</title></polyline>
+<polyline points="427.00,743.00 363.00,817.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-4~S5-3 · sea_coastal_spur · verified</title></polyline>
+<polyline points="427.00,743.00 491.00,817.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-4~S5-4 · sea_coastal_spur · verified</title></polyline>
+<polyline points="560.00,744.00 491.00,817.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-5~S5-4 · sea_coastal_spur · verified</title></polyline>
+<polyline points="560.00,744.00 619.00,818.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-5~S5-5 · sea_coastal_spur · verified</title></polyline>
+<polyline points="684.00,744.00 619.00,818.00" stroke="#49ddf1" stroke-width="1.7" stroke-dasharray="2 4"><title>C:M4-6~S5-5 · sea_coastal_spur · verified</title></polyline>
+</g>
+<g id="G_air" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="60.00,54.00 94.00,21.00 111.00,20.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:FNW~A0-1 · air_lane · provisional</title></polyline>
+<polyline points="111.00,20.00 236.00,21.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-1~A0-2 · air_lane · verified</title></polyline>
+<polyline points="236.00,21.00 364.00,21.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-2~A0-3 · air_lane · verified</title></polyline>
+<polyline points="364.00,21.00 491.00,21.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-3~A0-4 · air_lane · verified</title></polyline>
+<polyline points="491.00,21.00 615.00,25.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-4~A0-5 · air_lane · verified</title></polyline>
+<polyline points="615.00,25.00 745.00,22.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-5~A0-6 · air_lane · verified</title></polyline>
+<polyline points="745.00,22.00 750.00,22.00 795.00,53.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:A0-6~FNE · air_lane · provisional</title></polyline>
+<polyline points="22.00,189.00 111.00,186.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW1~A1-1 · air_lane · verified</title></polyline>
+<polyline points="111.00,186.00 236.00,186.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-1~A1-2 · air_lane · verified</title></polyline>
+<polyline points="236.00,186.00 364.00,186.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-2~A1-3 · air_lane · verified</title></polyline>
+<polyline points="364.00,186.00 491.00,188.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-3~A1-4 · air_lane · verified</title></polyline>
+<polyline points="491.00,188.00 615.00,188.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-4~A1-5 · air_lane · verified</title></polyline>
+<polyline points="615.00,188.00 741.00,188.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-5~A1-6 · air_lane · verified</title></polyline>
+<polyline points="741.00,188.00 834.00,191.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-6~AE1 · air_lane · verified</title></polyline>
+<polyline points="18.00,330.00 108.00,327.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW2~A2-1 · air_lane · verified</title></polyline>
+<polyline points="108.00,327.00 234.00,326.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-1~A2-2 · air_lane · verified</title></polyline>
+<polyline points="234.00,326.00 362.00,326.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-2~A2-3 · air_lane · verified</title></polyline>
+<polyline points="362.00,326.00 490.00,326.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-3~A2-4 · air_lane · verified</title></polyline>
+<polyline points="490.00,326.00 615.00,322.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-4~A2-5 · air_lane · verified</title></polyline>
+<polyline points="615.00,322.00 742.00,327.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-5~A2-6 · air_lane · verified</title></polyline>
+<polyline points="742.00,327.00 834.00,330.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-6~AE2 · air_lane · verified</title></polyline>
+<polyline points="109.00,469.00 234.00,468.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-1~A3-2 · air_lane · verified</title></polyline>
+<polyline points="234.00,468.00 361.00,467.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-2~A3-3 · air_lane · verified</title></polyline>
+<polyline points="361.00,467.00 490.00,466.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-3~A3-4 · air_lane · verified</title></polyline>
+<polyline points="490.00,466.00 614.00,464.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-4~A3-5 · air_lane · verified</title></polyline>
+<polyline points="614.00,464.00 745.00,465.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-5~A3-6 · air_lane · verified</title></polyline>
+<polyline points="111.00,741.00 238.00,742.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-1~A4-2 · air_lane · verified</title></polyline>
+<polyline points="238.00,742.00 366.00,742.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-2~A4-3 · air_lane · verified</title></polyline>
+<polyline points="366.00,742.00 493.00,743.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-3~A4-4 · air_lane · verified</title></polyline>
+<polyline points="493.00,743.00 619.00,744.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-4~A4-5 · air_lane · verified</title></polyline>
+<polyline points="619.00,744.00 741.00,745.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-5~A4-6 · air_lane · verified</title></polyline>
+<polyline points="23.00,880.00 113.00,882.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW6~A5-1 · air_lane · verified</title></polyline>
+<polyline points="113.00,882.00 238.00,882.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-1~A5-2 · air_lane · verified</title></polyline>
+<polyline points="238.00,882.00 364.00,882.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-2~A5-3 · air_lane · verified</title></polyline>
+<polyline points="364.00,882.00 492.00,882.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-3~A5-4 · air_lane · verified</title></polyline>
+<polyline points="492.00,882.00 617.00,886.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-4~A5-5 · air_lane · verified</title></polyline>
+<polyline points="617.00,886.00 744.00,884.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-5~A5-6 · air_lane · verified</title></polyline>
+<polyline points="744.00,884.00 835.00,883.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-6~AE6 · air_lane · verified</title></polyline>
+<polyline points="17.00,1017.00 108.00,1019.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW7~A6-1 · air_lane · verified</title></polyline>
+<polyline points="108.00,1019.00 233.00,1020.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-1~A6-2 · air_lane · verified</title></polyline>
+<polyline points="233.00,1020.00 362.00,1022.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-2~A6-3 · air_lane · verified</title></polyline>
+<polyline points="362.00,1022.00 492.00,1024.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-3~A6-4 · air_lane · verified</title></polyline>
+<polyline points="492.00,1024.00 621.00,1026.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-4~A6-5 · air_lane · verified</title></polyline>
+<polyline points="621.00,1026.00 746.00,1027.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-5~A6-6 · air_lane · verified</title></polyline>
+<polyline points="746.00,1027.00 838.00,1027.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-6~AE7 · air_lane · verified</title></polyline>
+<polyline points="66.00,1137.00 107.00,1165.00 117.00,1166.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:FSW~A7-1 · air_lane · provisional</title></polyline>
+<polyline points="117.00,1166.00 238.00,1167.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A7-1~A7-2 · air_lane · verified</title></polyline>
+<polyline points="238.00,1167.00 364.00,1168.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A7-2~A7-3 · air_lane · verified</title></polyline>
+<polyline points="364.00,1168.00 488.00,1166.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A7-3~A7-4 · air_lane · verified</title></polyline>
+<polyline points="488.00,1166.00 613.00,1174.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A7-4~A7-5 · air_lane · verified</title></polyline>
+<polyline points="613.00,1174.00 733.00,1172.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A7-5~A7-6 · air_lane · verified</title></polyline>
+<polyline points="733.00,1172.00 740.00,1172.00 786.00,1145.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:A7-6~FSE · air_lane · provisional</title></polyline>
+<polyline points="111.00,20.00 111.00,186.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-1~A1-1 · air_lane · verified</title></polyline>
+<polyline points="111.00,186.00 108.00,327.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-1~A2-1 · air_lane · verified</title></polyline>
+<polyline points="113.00,882.00 108.00,1019.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-1~A6-1 · air_lane · verified</title></polyline>
+<polyline points="108.00,1019.00 117.00,1166.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-1~A7-1 · air_lane · verified</title></polyline>
+<polyline points="236.00,21.00 236.00,186.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-2~A1-2 · air_lane · verified</title></polyline>
+<polyline points="236.00,186.00 234.00,326.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-2~A2-2 · air_lane · verified</title></polyline>
+<polyline points="234.00,326.00 234.00,468.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-2~A3-2 · air_lane · verified</title></polyline>
+<polyline points="234.00,468.00 236.00,604.00 238.00,742.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-2~A4-2 · air_lane · verified</title></polyline>
+<polyline points="238.00,742.00 238.00,882.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-2~A5-2 · air_lane · verified</title></polyline>
+<polyline points="238.00,882.00 233.00,1020.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-2~A6-2 · air_lane · verified</title></polyline>
+<polyline points="233.00,1020.00 238.00,1167.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-2~A7-2 · air_lane · verified</title></polyline>
+<polyline points="364.00,21.00 364.00,186.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-3~A1-3 · air_lane · verified</title></polyline>
+<polyline points="364.00,186.00 362.00,326.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-3~A2-3 · air_lane · verified</title></polyline>
+<polyline points="362.00,326.00 361.00,467.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-3~A3-3 · air_lane · verified</title></polyline>
+<polyline points="361.00,467.00 364.00,604.00 366.00,742.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-3~A4-3 · air_lane · verified</title></polyline>
+<polyline points="366.00,742.00 364.00,882.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-3~A5-3 · air_lane · verified</title></polyline>
+<polyline points="364.00,882.00 362.00,1022.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-3~A6-3 · air_lane · verified</title></polyline>
+<polyline points="362.00,1022.00 364.00,1168.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-3~A7-3 · air_lane · verified</title></polyline>
+<polyline points="491.00,21.00 491.00,188.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-4~A1-4 · air_lane · verified</title></polyline>
+<polyline points="491.00,188.00 490.00,326.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-4~A2-4 · air_lane · verified</title></polyline>
+<polyline points="490.00,326.00 490.00,466.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-4~A3-4 · air_lane · verified</title></polyline>
+<polyline points="490.00,466.00 492.00,604.00 493.00,743.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A3-4~A4-4 · air_lane · verified</title></polyline>
+<polyline points="493.00,743.00 492.00,882.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-4~A5-4 · air_lane · verified</title></polyline>
+<polyline points="492.00,882.00 492.00,1024.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-4~A6-4 · air_lane · verified</title></polyline>
+<polyline points="492.00,1024.00 488.00,1166.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-4~A7-4 · air_lane · verified</title></polyline>
+<polyline points="615.00,25.00 615.00,188.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-5~A1-5 · air_lane · verified</title></polyline>
+<polyline points="615.00,188.00 615.00,322.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-5~A2-5 · air_lane · verified</title></polyline>
+<polyline points="615.00,322.00 614.00,464.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A2-5~A3-5 · air_lane · verified</title></polyline>
+<polyline points="614.00,464.00 616.00,604.00 619.00,744.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:A3-5~A4-5 · air_lane · provisional</title></polyline>
+<polyline points="619.00,744.00 617.00,886.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A4-5~A5-5 · air_lane · verified</title></polyline>
+<polyline points="617.00,886.00 621.00,1026.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-5~A6-5 · air_lane · verified</title></polyline>
+<polyline points="621.00,1026.00 613.00,1174.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-5~A7-5 · air_lane · verified</title></polyline>
+<polyline points="745.00,22.00 741.00,188.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A0-6~A1-6 · air_lane · verified</title></polyline>
+<polyline points="741.00,188.00 742.00,327.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A1-6~A2-6 · air_lane · verified</title></polyline>
+<polyline points="744.00,884.00 746.00,1027.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A5-6~A6-6 · air_lane · verified</title></polyline>
+<polyline points="746.00,1027.00 733.00,1172.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:A6-6~A7-6 · air_lane · verified</title></polyline>
+<polyline points="60.00,54.00 23.00,82.00 22.00,189.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:FNW~AW1 · air_lane · provisional</title></polyline>
+<polyline points="22.00,189.00 18.00,330.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW1~AW2 · air_lane · verified</title></polyline>
+<polyline points="18.00,330.00 21.00,470.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW2~AW3 · air_lane · verified</title></polyline>
+<polyline points="21.00,470.00 20.00,604.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:AW3~AW4 · air_lane · provisional</title></polyline>
+<polyline points="20.00,604.00 23.00,740.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:AW4~AW5 · air_lane · provisional</title></polyline>
+<polyline points="23.00,740.00 23.00,880.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW5~AW6 · air_lane · verified</title></polyline>
+<polyline points="23.00,880.00 17.00,1017.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AW6~AW7 · air_lane · verified</title></polyline>
+<polyline points="17.00,1017.00 21.00,1113.00 66.00,1137.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:AW7~FSW · air_lane · provisional</title></polyline>
+<polyline points="795.00,53.00 833.00,84.00 834.00,191.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:FNE~AE1 · air_lane · provisional</title></polyline>
+<polyline points="834.00,191.00 834.00,330.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AE1~AE2 · air_lane · verified</title></polyline>
+<polyline points="834.00,330.00 834.00,466.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AE2~AE3 · air_lane · verified</title></polyline>
+<polyline points="834.00,466.00 838.00,606.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:AE3~AE4 · air_lane · provisional</title></polyline>
+<polyline points="838.00,606.00 833.00,745.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:AE4~AE5 · air_lane · provisional</title></polyline>
+<polyline points="833.00,745.00 835.00,883.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AE5~AE6 · air_lane · verified</title></polyline>
+<polyline points="835.00,883.00 838.00,1027.00" stroke="#acf585" stroke-width="2.5"><title>air_lane:AE6~AE7 · air_lane · verified</title></polyline>
+<polyline points="838.00,1027.00 831.00,1112.00 786.00,1145.00" stroke="#ff59d3" stroke-width="2.5" stroke-dasharray="7 5"><title>air_lane:AE7~FSE · air_lane · provisional</title></polyline>
+</g>
+<g id="nodes" stroke-width="1.2">
+<g id="node-N0-1"><title>N0-1 · station · verified</title><circle cx="172" cy="50" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N0-2"><title>N0-2 · city · verified</title><rect x="291" y="45" width="12" height="12" rx="1" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N0-3"><title>N0-3 · city · verified</title><rect x="419" y="45" width="12" height="12" rx="1" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N0-4"><title>N0-4 · city · verified</title><rect x="546" y="44" width="12" height="12" rx="1" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N0-5"><title>N0-5 · station · verified</title><circle cx="678" cy="51" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N1-1"><title>N1-1 · station · verified</title><circle cx="108" cy="113" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N1-2"><title>N1-2 · station · verified</title><circle cx="235" cy="113" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N1-3"><title>N1-3 · station · verified</title><circle cx="361" cy="112" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N1-4"><title>N1-4 · station · verified</title><circle cx="489" cy="109" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N1-5"><title>N1-5 · station · verified</title><circle cx="614" cy="115" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N1-6"><title>N1-6 · station · verified</title><circle cx="741" cy="114" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N2-1"><title>N2-1 · station · verified</title><circle cx="43" cy="187" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N2-2"><title>N2-2 · station · verified</title><circle cx="171" cy="185" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N2-3"><title>N2-3 · station · verified</title><circle cx="298" cy="185" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N2-4"><title>N2-4 · station · verified</title><circle cx="426" cy="185" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N2-5"><title>N2-5 · station · verified</title><circle cx="555" cy="187" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N2-6"><title>N2-6 · station · verified</title><circle cx="678" cy="188" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N2-7"><title>N2-7 · station · verified</title><circle cx="811" cy="188" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N3-1"><title>N3-1 · camp · verified</title><circle cx="108" cy="254" r="6" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N3-2"><title>N3-2 · rail_point · verified</title><circle cx="230" cy="260" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-N3-3"><title>N3-3 · rail_point · verified</title><circle cx="360" cy="261" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-N3-4"><title>N3-4 · rail_point · verified</title><circle cx="488" cy="260" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-N3-5"><title>N3-5 · rail_point · verified</title><circle cx="616" cy="261" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-N3-6"><title>N3-6 · camp · verified</title><circle cx="741" cy="256" r="6" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N4-1"><title>N4-1 · station · verified</title><circle cx="40" cy="328" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N4-2"><title>N4-2 · rail_point · verified</title><circle cx="169" cy="327" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-N4-3"><title>N4-3 · station · verified</title><circle cx="294" cy="326" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N4-4"><title>N4-4 · station · verified</title><circle cx="427" cy="326" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N4-5"><title>N4-5 · station · verified</title><circle cx="558" cy="324" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N4-6"><title>N4-6 · rail_point · verified</title><circle cx="681" cy="327" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-N4-7"><title>N4-7 · station · verified</title><circle cx="812" cy="328" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N5-1"><title>N5-1 · bridgehead · verified</title><rect x="105" y="387" width="12" height="12" rx="1" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-N5-2"><title>N5-2 · coast_point · verified</title><circle cx="226" cy="395" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N5-3"><title>N5-3 · coast_point · verified</title><circle cx="357" cy="394" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N5-4"><title>N5-4 · coast_point · verified</title><circle cx="488" cy="394" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N5-5"><title>N5-5 · coast_point · verified</title><circle cx="617" cy="393" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-N5-6"><title>N5-6 · bridgehead · verified</title><rect x="734" y="386" width="12" height="12" rx="1" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S0-1"><title>S0-1 · station · verified</title><circle cx="174" cy="1142" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S0-2"><title>S0-2 · city · verified</title><rect x="292" y="1136" width="12" height="12" rx="1" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S0-3"><title>S0-3 · city · verified</title><rect x="415" y="1137" width="12" height="12" rx="1" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S0-4"><title>S0-4 · city · verified</title><rect x="541" y="1140" width="12" height="12" rx="1" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S0-5"><title>S0-5 · station · verified</title><circle cx="671" cy="1149" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S1-1"><title>S1-1 · station · verified</title><circle cx="108" cy="1084" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S1-2"><title>S1-2 · station · verified</title><circle cx="233" cy="1083" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S1-3"><title>S1-3 · station · verified</title><circle cx="359" cy="1086" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S1-4"><title>S1-4 · station · verified</title><circle cx="487" cy="1087" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S1-5"><title>S1-5 · station · verified</title><circle cx="614" cy="1092" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S1-6"><title>S1-6 · station · verified</title><circle cx="738" cy="1089" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S2-1"><title>S2-1 · station · verified</title><circle cx="34" cy="1017" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S2-2"><title>S2-2 · station · verified</title><circle cx="165" cy="1018" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S2-3"><title>S2-3 · station · verified</title><circle cx="292" cy="1020" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S2-4"><title>S2-4 · station · verified</title><circle cx="421" cy="1021" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S2-5"><title>S2-5 · station · verified</title><circle cx="552" cy="1023" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S2-6"><title>S2-6 · station · verified</title><circle cx="682" cy="1026" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S2-7"><title>S2-7 · station · verified</title><circle cx="813" cy="1027" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S3-1"><title>S3-1 · camp · verified</title><circle cx="108" cy="950" r="6" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S3-2"><title>S3-2 · rail_point · verified</title><circle cx="232" cy="948" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S3-3"><title>S3-3 · rail_point · verified</title><circle cx="363" cy="950" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S3-4"><title>S3-4 · rail_point · verified</title><circle cx="490" cy="952" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S3-5"><title>S3-5 · rail_point · verified</title><circle cx="618" cy="951" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S3-6"><title>S3-6 · camp · verified</title><circle cx="743" cy="956" r="6" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S4-1"><title>S4-1 · station · verified</title><circle cx="40" cy="881" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S4-2"><title>S4-2 · rail_point · verified</title><circle cx="168" cy="882" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S4-3"><title>S4-3 · station · verified</title><circle cx="294" cy="881" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S4-4"><title>S4-4 · station · verified</title><circle cx="426" cy="881" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S4-5"><title>S4-5 · station · verified</title><circle cx="556" cy="883" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S4-6"><title>S4-6 · rail_point · verified</title><circle cx="678" cy="884" r="4.2" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S4-7"><title>S4-7 · station · verified</title><circle cx="810" cy="883" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S5-1"><title>S5-1 · bridgehead · verified</title><rect x="107" y="805" width="12" height="12" rx="1" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-S5-2"><title>S5-2 · coast_point · verified</title><circle cx="237" cy="816" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S5-3"><title>S5-3 · coast_point · verified</title><circle cx="363" cy="817" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S5-4"><title>S5-4 · coast_point · verified</title><circle cx="491" cy="817" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S5-5"><title>S5-5 · coast_point · verified</title><circle cx="619" cy="818" r="4.2" fill="#e85052" stroke="#132b36"/></g>
+<g id="node-S5-6"><title>S5-6 · bridgehead · verified</title><rect x="732" y="808" width="12" height="12" rx="1" fill="#eaba4c" stroke="#132b36"/></g>
+<g id="node-M0-1"><title>M0-1 · sea_stop · provisional</title><path d="M39 465.8L43.2 470L39 474.2L34.8 470Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-M0-2"><title>M0-2 · anchor · verified</title><circle cx="166" cy="469" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M0-3"><title>M0-3 · anchor · verified</title><circle cx="295" cy="469" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M0-4"><title>M0-4 · anchor · verified</title><circle cx="429" cy="466" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M0-5"><title>M0-5 · anchor · verified</title><circle cx="562" cy="465" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M0-6"><title>M0-6 · anchor · verified</title><circle cx="686" cy="465" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M0-7"><title>M0-7 · sea_stop · provisional</title><path d="M815 460.8L819.2 465L815 469.2L810.8 465Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-M1-1"><title>M1-1 · sea_stop · verified</title><circle cx="234" cy="537" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M1-2"><title>M1-2 · sea_stop · verified</title><circle cx="362" cy="539" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M1-3"><title>M1-3 · sea_stop · verified</title><circle cx="491" cy="538" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M1-4"><title>M1-4 · sea_stop · verified</title><circle cx="618" cy="534" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M2-1"><title>M2-1 · sea_stop · provisional</title><path d="M40 599.8L44.2 604L40 608.2L35.8 604Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-M2-2"><title>M2-2 · sea_stop · verified</title><circle cx="166" cy="605" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M2-3"><title>M2-3 · sea_stop · verified</title><circle cx="297" cy="605" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M2-4"><title>M2-4 · sea_stop · verified</title><circle cx="427" cy="604" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M2-5"><title>M2-5 · sea_stop · verified</title><circle cx="560" cy="605" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M2-6"><title>M2-6 · sea_stop · verified</title><circle cx="688" cy="605" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M2-7"><title>M2-7 · sea_stop · provisional</title><path d="M813 600.8L817.2 605L813 609.2L808.8 605Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-M3-1"><title>M3-1 · sea_stop · verified</title><circle cx="238" cy="674" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M3-2"><title>M3-2 · sea_stop · verified</title><circle cx="365" cy="673" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M3-3"><title>M3-3 · sea_stop · verified</title><circle cx="494" cy="674" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M3-4"><title>M3-4 · sea_stop · verified</title><circle cx="620" cy="676" r="4.2" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M4-1"><title>M4-1 · sea_stop · provisional</title><path d="M41 735.8L45.2 740L41 744.2L36.8 740Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-M4-2"><title>M4-2 · anchor · verified</title><circle cx="170" cy="741" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M4-3"><title>M4-3 · anchor · verified</title><circle cx="295" cy="742" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M4-4"><title>M4-4 · anchor · verified</title><circle cx="427" cy="743" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M4-5"><title>M4-5 · anchor · verified</title><circle cx="560" cy="744" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M4-6"><title>M4-6 · anchor · verified</title><circle cx="684" cy="744" r="6" fill="#49ddf1" stroke="#132b36"/></g>
+<g id="node-M4-7"><title>M4-7 · sea_stop · provisional</title><path d="M816 740.8L820.2 745L816 749.2L811.8 745Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-A0-1"><title>A0-1 · air_stop · verified</title><circle cx="111" cy="20" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A0-2"><title>A0-2 · air_stop · verified</title><circle cx="236" cy="21" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A0-3"><title>A0-3 · air_stop · verified</title><circle cx="364" cy="21" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A0-4"><title>A0-4 · air_stop · verified</title><circle cx="491" cy="21" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A0-5"><title>A0-5 · air_stop · verified</title><circle cx="615" cy="25" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A0-6"><title>A0-6 · air_stop · verified</title><circle cx="745" cy="22" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A1-1"><title>A1-1 · air_stop · verified</title><circle cx="111" cy="186" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A1-2"><title>A1-2 · air_stop · verified</title><circle cx="236" cy="186" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A1-3"><title>A1-3 · air_stop · verified</title><circle cx="364" cy="186" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A1-4"><title>A1-4 · air_stop · verified</title><circle cx="491" cy="188" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A1-5"><title>A1-5 · air_stop · verified</title><circle cx="615" cy="188" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A1-6"><title>A1-6 · air_stop · verified</title><circle cx="741" cy="188" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A2-1"><title>A2-1 · air_stop · verified</title><circle cx="108" cy="327" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A2-2"><title>A2-2 · air_stop · verified</title><circle cx="234" cy="326" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A2-3"><title>A2-3 · air_stop · verified</title><circle cx="362" cy="326" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A2-4"><title>A2-4 · air_stop · verified</title><circle cx="490" cy="326" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A2-5"><title>A2-5 · air_stop · verified</title><circle cx="615" cy="322" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A2-6"><title>A2-6 · air_stop · verified</title><circle cx="742" cy="327" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A3-1"><title>A3-1 · air_stop · provisional</title><path d="M109 464.8L113.2 469L109 473.2L104.8 469Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-A3-2"><title>A3-2 · air_stop · verified</title><circle cx="234" cy="468" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A3-3"><title>A3-3 · air_stop · verified</title><circle cx="361" cy="467" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A3-4"><title>A3-4 · air_stop · verified</title><circle cx="490" cy="466" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A3-5"><title>A3-5 · air_stop · verified</title><circle cx="614" cy="464" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A3-6"><title>A3-6 · air_stop · provisional</title><path d="M745 460.8L749.2 465L745 469.2L740.8 465Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-A4-1"><title>A4-1 · air_stop · provisional</title><path d="M111 736.8L115.2 741L111 745.2L106.8 741Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-A4-2"><title>A4-2 · air_stop · verified</title><circle cx="238" cy="742" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A4-3"><title>A4-3 · air_stop · verified</title><circle cx="366" cy="742" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A4-4"><title>A4-4 · air_stop · verified</title><circle cx="493" cy="743" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A4-5"><title>A4-5 · air_stop · verified</title><circle cx="619" cy="744" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A4-6"><title>A4-6 · air_stop · provisional</title><path d="M741 740.8L745.2 745L741 749.2L736.8 745Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-A5-1"><title>A5-1 · air_stop · verified</title><circle cx="113" cy="882" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A5-2"><title>A5-2 · air_stop · verified</title><circle cx="238" cy="882" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A5-3"><title>A5-3 · air_stop · verified</title><circle cx="364" cy="882" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A5-4"><title>A5-4 · air_stop · verified</title><circle cx="492" cy="882" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A5-5"><title>A5-5 · air_stop · verified</title><circle cx="617" cy="886" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A5-6"><title>A5-6 · air_stop · verified</title><circle cx="744" cy="884" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A6-1"><title>A6-1 · air_stop · verified</title><circle cx="108" cy="1019" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A6-2"><title>A6-2 · air_stop · verified</title><circle cx="233" cy="1020" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A6-3"><title>A6-3 · air_stop · verified</title><circle cx="362" cy="1022" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A6-4"><title>A6-4 · air_stop · verified</title><circle cx="492" cy="1024" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A6-5"><title>A6-5 · air_stop · verified</title><circle cx="621" cy="1026" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A6-6"><title>A6-6 · air_stop · verified</title><circle cx="746" cy="1027" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A7-1"><title>A7-1 · air_stop · verified</title><circle cx="117" cy="1166" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A7-2"><title>A7-2 · air_stop · verified</title><circle cx="238" cy="1167" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A7-3"><title>A7-3 · air_stop · verified</title><circle cx="364" cy="1168" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A7-4"><title>A7-4 · air_stop · verified</title><circle cx="488" cy="1166" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A7-5"><title>A7-5 · air_stop · verified</title><circle cx="613" cy="1174" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-A7-6"><title>A7-6 · air_stop · verified</title><circle cx="733" cy="1172" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AW1"><title>AW1 · air_stop · verified</title><circle cx="22" cy="189" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AW2"><title>AW2 · air_stop · verified</title><circle cx="18" cy="330" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AW3"><title>AW3 · air_stop · verified</title><circle cx="21" cy="470" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AW4"><title>AW4 · air_stop · provisional</title><path d="M20 599.8L24.2 604L20 608.2L15.8 604Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-AW5"><title>AW5 · air_stop · verified</title><circle cx="23" cy="740" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AW6"><title>AW6 · air_stop · verified</title><circle cx="23" cy="880" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AW7"><title>AW7 · air_stop · verified</title><circle cx="17" cy="1017" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AE1"><title>AE1 · air_stop · verified</title><circle cx="834" cy="191" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AE2"><title>AE2 · air_stop · verified</title><circle cx="834" cy="330" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AE3"><title>AE3 · air_stop · verified</title><circle cx="834" cy="466" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AE4"><title>AE4 · air_stop · provisional</title><path d="M838 601.8L842.2 606L838 610.2L833.8 606Z" fill="#132b36" stroke="#ff59d3"/></g>
+<g id="node-AE5"><title>AE5 · air_stop · verified</title><circle cx="833" cy="745" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AE6"><title>AE6 · air_stop · verified</title><circle cx="835" cy="883" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-AE7"><title>AE7 · air_stop · verified</title><circle cx="838" cy="1027" r="4.2" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-FNW"><title>FNW · airfield · verified</title><circle cx="60" cy="54" r="6" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-FNE"><title>FNE · airfield · verified</title><circle cx="795" cy="53" r="6" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-FSW"><title>FSW · airfield · verified</title><circle cx="66" cy="1137" r="6" fill="#acf585" stroke="#132b36"/></g>
+<g id="node-FSE"><title>FSE · airfield · verified</title><circle cx="786" cy="1145" r="6" fill="#acf585" stroke="#132b36"/></g>
+</g>
+</svg>

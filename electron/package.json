@@ -1,0 +1,9 @@
+{
+  "name": "triservice-chess",
+  "productName": "陆海空三军棋",
+  "version": "1.0.0",
+  "description": "陆海空三军棋 · 传统台湾三十年制（本地游戏，无需联网）",
+  "main": "main.js",
+  "private": true,
+  "license": "MIT"
+}

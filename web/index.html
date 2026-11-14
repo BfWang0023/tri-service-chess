@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陆海空三军棋 v1.0 · 雷鸟历史棋盘版</title>
+<style>
+  :root { --bg:#0c1a22; --panel:#12262e; --ink:#e8eef0; --muted:#8fa3ab; --accent:#d9a441;
+          --red:#c0392b; --black:#34495e; --line:#24404c; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; }
+  body { font-family: system-ui,"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); }
+  button { font-family:inherit; cursor:pointer; }
+  .screen { display:none; padding:12px; max-width:1400px; margin:0 auto; }
+  .screen.active { display:block; }
+  .hidden { display:none !important; }
+
+  /* 菜单 */
+  .menu-center { text-align:center; padding-top:7vh; }
+  .menu-center h1 { font-size:38px; letter-spacing:3px; margin:0 0 4px; color:var(--accent); }
+  .menu-center .sub { color:var(--muted); margin-bottom:30px; }
+  .menu-btn { display:block; width:300px; margin:10px auto; padding:13px; font-size:17px; background:var(--panel); color:var(--ink); border:1px solid #2c5566; border-radius:9px; }
+  .menu-btn:hover { background:#1e3d49; border-color:var(--accent); }
+  .diff-row { display:flex; gap:8px; justify-content:center; margin:6px 0 14px; }
+  .diff-row button { padding:8px 20px; background:var(--panel); color:var(--ink); border:1px solid #2c5566; border-radius:8px; }
+  .diff-row button.on { background:var(--accent); color:#1a1a1a; border-color:var(--accent); }
+
+  /* 顶栏 */
+  .topbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:9px; margin-bottom:8px; }
+  .topbar h1 { font-size:16px; margin:0; color:var(--accent); }
+  .spacer { flex:1; }
+  .pill { padding:4px 11px; border-radius:999px; background:#12262e; border:1px solid #2c5566; font-size:13px; }
+  .pill.red { background:#3a1d1e; border-color:var(--red); }
+  .pill.black { background:#1a2730; border-color:#5b7f95; }
+  .pill.ai { background:#243d1f; border-color:#5c8a4a; }
+  .topbar button, .ctrl-btn { padding:6px 11px; font-size:12.5px; background:#12262e; color:var(--ink); border:1px solid #2c5566; border-radius:6px; }
+  .topbar button:hover, .ctrl-btn:hover { border-color:var(--accent); }
+  .ctrl-btn.on { background:var(--accent); color:#1a1a1a; border-color:var(--accent); }
+  .danger { color:var(--red); border-color:var(--red) !important; }
+  .sep { width:1px; height:20px; background:var(--line); }
+
+  #board-wrap { position:relative; border:1px solid var(--line); border-radius:8px; background:#081218; overflow:hidden; height:calc(100vh - 232px); min-height:420px; }
+  svg#board { display:block; width:100%; height:100%; cursor:grab; }
+  svg#board.dragging { cursor:grabbing; }
+  svg .hit { cursor:pointer; }
+  svg .piece { cursor:pointer; }
+
+  #tray { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0; }
+  .tray-piece { display:flex; flex-direction:column; align-items:center; padding:4px 6px; border:1px solid #2c5566; border-radius:6px; background:#12262e; cursor:pointer; min-width:46px; }
+  .tray-piece .chip { width:30px; height:30px; border-radius:50%; color:#fff; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:600; }
+  .tray-piece .nm { font-size:11px; color:#c9d6db; }
+  .tray-piece.sel { outline:2px solid var(--accent); }
+  .actions { display:flex; gap:8px; flex-wrap:wrap; margin:6px 0; align-items:center; }
+  .actions button { padding:7px 12px; font-size:13px; background:#12262e; color:var(--ink); border:1px solid #2c5566; border-radius:6px; }
+  .actions button:hover { border-color:var(--accent); }
+
+  #toast { position:fixed; left:50%; top:14px; transform:translateX(-50%); background:rgba(10,20,25,.95); color:#fff; padding:9px 18px; border-radius:8px; font-size:14px; opacity:0; transition:opacity .25s; pointer-events:none; z-index:60; }
+  #toast.show { opacity:1; }
+
+  #handoff { position:fixed; inset:0; background:rgba(6,14,18,.97); color:#fff; display:none; flex-direction:column; align-items:center; justify-content:center; z-index:50; }
+  #handoff.show { display:flex; }
+  #handoff h2 { font-size:30px; margin:0 0 8px; color:var(--accent); }
+  #handoff p { color:#9fb3bb; margin:0 0 22px; }
+  #handoff button { padding:13px 34px; font-size:18px; border-radius:8px; border:none; background:var(--accent); color:#1a1a1a; }
+
+  #gameover { position:fixed; inset:0; background:rgba(4,10,14,.8); display:none; align-items:center; justify-content:center; z-index:55; }
+  #gameover.show { display:flex; }
+  #gameover .card { background:#16303a; border:1px solid #2c5566; border-radius:12px; padding:26px 36px; text-align:center; }
+  #gameover h2 { margin:0 0 10px; color:var(--accent); }
+  #gameover .btns { display:flex; gap:10px; justify-content:center; margin-top:16px; }
+  #gameover button { padding:9px 18px; border-radius:7px; border:1px solid #2c5566; background:#12262e; color:var(--ink); }
+
+  .rules-tabs { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+  .rules-tabs button { padding:7px 14px; background:#12262e; color:var(--ink); border:1px solid #2c5566; border-radius:6px; }
+  .rules-tabs button.on { background:var(--accent); color:#1a1a1a; }
+  .rule-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:8px; }
+  .rule-card { border:1px solid var(--line); border-radius:8px; padding:9px; background:#12262e; font-size:12px; color:#c9d6db; }
+  .rule-card b { display:block; font-size:14px; margin-bottom:3px; color:var(--ink); }
+  .rule-card .chip { display:inline-block; width:24px; height:24px; border-radius:50%; color:#fff; text-align:center; line-height:24px; font-size:11px; margin-right:6px; }
+  .stat-line { font-size:13px; color:var(--muted); margin-top:8px; }
+  details { margin-top:8px; } summary { cursor:pointer; color:var(--muted); font-size:13px; }
+
+  #replaybar { display:flex; gap:8px; align-items:center; margin:6px 0; }
+  #replaybar button { padding:6px 12px; background:#12262e; color:var(--ink); border:1px solid #2c5566; border-radius:6px; }
+  #replaybar input[type=range] { flex:1; }
+
+  #air-debug { background:#0e2028; border:1px solid #2c5566; border-radius:8px; padding:8px 12px; margin-top:8px; font-size:12px; color:#a9c0c9; max-height:150px; overflow:auto; font-family:ui-monospace,Menlo,monospace; }
+  #air-debug b { color:var(--accent); }
+  #air-debug .bad { color:#e07a6a; }
+  #air-debug .good { color:#6ad08a; }
+</style>
+</head>
+<body>
+  <!-- 菜单 -->
+  <div id="screen-menu" class="screen active">
+    <div class="menu-center">
+      <h1>陆海空三军棋</h1>
+      <div class="sub">v1.0 · 雷鸟历史棋盘版（NMTH 2010.031.0527.0002 · v2.0.0）</div>
+      <button class="menu-btn" id="btn-mode-local">本地双人对局</button>
+      <div class="diff-row" id="diff-row">
+        <button data-diff="easy">简单</button>
+        <button data-diff="normal" class="on">普通</button>
+        <button data-diff="hard">困难</button>
+      </div>
+      <button class="menu-btn" id="btn-mode-ai">人机对战（上方难度）</button>
+      <button class="menu-btn" id="btn-mode-aivsai">AI 对 AI 演示</button>
+      <button class="menu-btn" id="btn-rules">规则说明</button>
+    </div>
+  </div>
+
+  <!-- 规则说明 -->
+  <div id="screen-rules" class="screen">
+    <div class="topbar"><h1>规则说明</h1><div class="spacer"></div><button id="btn-rules-back">返回菜单</button></div>
+    <div class="rules-tabs" id="rules-tabs"></div>
+    <div class="rule-grid" id="rules-grid"></div>
+    <div class="stat-line" id="rules-note"></div>
+  </div>
+
+  <!-- 对局 -->
+  <div id="screen-game" class="screen">
+    <div class="topbar">
+      <h1>陆海空三军棋</h1>
+      <span class="pill" id="mode-pill">本地双人</span>
+      <span class="pill" id="phase-pill">布阵</span>
+      <span class="pill" id="turn-pill">红方</span>
+      <span class="pill" id="stat-pill">存活 30:30</span>
+      <div class="sep"></div>
+      <span style="font-size:12px;color:#8fa3ab">线路</span>
+      <button class="ctrl-btn" data-line="all">全部</button>
+      <button class="ctrl-btn" data-line="army">陆军</button>
+      <button class="ctrl-btn" data-line="navy">海军</button>
+      <button class="ctrl-btn" data-line="air">空军</button>
+      <button class="ctrl-btn on" data-line="smart">智能</button>
+      <div class="sep"></div>
+      <button id="btn-zoom-out" class="ctrl-btn">－</button>
+      <button id="btn-zoom-reset" class="ctrl-btn">重置视角</button>
+      <button id="btn-zoom-in" class="ctrl-btn">＋</button>
+      <div class="sep"></div>
+      <button id="btn-save">保存</button>
+      <button id="btn-restore">恢复</button>
+      <button id="btn-undo">撤销</button>
+      <button id="btn-replay">复盘</button>
+      <button id="btn-resign" class="danger">认输</button>
+      <button id="btn-menu">返回菜单</button>
+    </div>
+
+    <div id="board-wrap"><svg id="board"></svg></div>
+
+    <div id="replaybar" class="hidden">
+      <button id="rp-prev">◀ 上一步</button>
+      <input type="range" id="rp-range" min="0" max="0" value="0">
+      <button id="rp-next">下一步 ▶</button>
+      <span class="pill" id="rp-label">0 / 0</span>
+      <button id="rp-exit">退出复盘</button>
+    </div>
+
+    <div id="traybar">
+      <div class="actions" id="setup-actions">
+        <span class="pill" id="setup-hint">红方布阵</span>
+        <button id="btn-auto">自动布阵</button>
+        <button id="btn-reset-setup">重新布阵</button>
+        <button id="btn-finish-setup">完成布阵</button>
+      </div>
+      <div id="tray"></div>
+    </div>
+    <div class="actions" id="play-actions" style="display:none">
+      <span class="pill" id="play-hint">点击己方棋子查看行动</span>
+    </div>
+    <div id="air-debug" class="hidden"></div>
+    <details id="history-panel" class="hidden" style="margin-top:8px">
+      <summary>行动历史</summary>
+      <div id="history-list" style="max-height:160px;overflow:auto;font-size:12px;color:#9fb3bb;margin-top:6px;font-family:monospace"></div>
+    </details>
+  </div>
+
+  <div id="handoff"><h2 id="handoff-title">请交接</h2><p id="handoff-msg"></p><button id="handoff-btn">确认接手</button></div>
+  <div id="gameover"><div class="card">
+    <h2 id="go-title">对局结束</h2><p id="go-msg"></p>
+    <div class="btns"><button id="go-replay">复盘</button><button id="go-restart">再来一局</button><button id="go-menu">返回菜单</button></div>
+  </div></div>
+  <div id="toast"></div>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

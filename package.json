@@ -1,0 +1,17 @@
+{
+  "name": "tri-service-chess",
+  "version": "1.0.0",
+  "description": "陆海空三军棋 v1.0 — 雷鸟历史棋盘版（Tri-Service Chess, NMTH historical board 2.0.0）",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:legacy": "cd legacy && node --test tests/*.test.mjs",
+    "demo": "node demo/two-player-sim.mjs",
+    "sim": "node demo/two-player-sim.mjs",
+    "ai": "node demo/ai-sim.mjs",
+    "dist": "python3 make-dist.py",
+    "dist:html": "python3 desktop/bundle_html.py",
+    "dist:win": "python3 electron/build-win.py"
+  },
+  "private": true
+}

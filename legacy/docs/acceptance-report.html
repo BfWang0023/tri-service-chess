@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三军棋第三阶段验收报告</title>
+<style>
+  :root { --ink:#2b2b2b; --muted:#777; --accent:#b8860b; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--ink);
+         max-width: 980px; margin: 0 auto; padding: 24px 20px; background:#f7f4ec; line-height:1.6; }
+  h1 { border-bottom: 3px solid var(--accent); padding-bottom: 8px; }
+  h2 { margin-top: 30px; border-left: 5px solid var(--accent); padding-left: 10px; }
+  .meta { color: var(--muted); font-size: 13px; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; background:#fff; }
+  th, td { border: 1px solid #ddd; padding: 6px 10px; font-size: 13px; text-align: left; }
+  th { background: #efe9dc; }
+  code { background: #f0ece2; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  pre { background: #2b2b2b; color: #e8e8e8; padding: 12px; border-radius: 8px; overflow-x: auto; font-size: 12px; }
+  .pass { color: #1e7e34; font-weight: 700; }
+  .board-frame { background: #fffdf8; border: 1px solid #ddd; border-radius: 8px; padding: 8px; overflow-x: auto; }
+  .warn { background: #fdf3d8; border: 1px solid #e6cf7a; border-radius: 8px; padding: 10px 14px; }
+  .shot { border: 2px dashed #ccc; border-radius: 8px; padding: 18px; text-align: center; color: var(--muted); margin: 10px 0; }
+</style>
+</head>
+<body>
+<h1>陆海空三军棋 · 第三阶段验收报告</h1>
+<div class="meta">生成时间：<span id="ts"></span> · 版本 0.3.0 · 本地双人（不含 AI）</div>
+
+<h2>1. 验收目标达成情况</h2>
+<table>
+<tr><th>验收目标</th><th>状态</th><th>说明</th></tr>
+<tr><td>打开网页即可开始对局</td><td class="pass">✅</td><td>菜单 → 双方布阵 → 对局 → 夺旗结束</td></tr>
+<tr><td>双方分别布阵、另一方不可见</td><td class="pass">✅</td><td>全屏交接遮罩 + 敌方棋子背面「?」</td></tr>
+<tr><td>隐藏信息不泄漏</td><td class="pass">✅</td><td>未揭示敌子 HIDDEN；被消灭者才揭示；侦察仅侦察方可见</td></tr>
+<tr><td>轮换行动交接</td><td class="pass">✅</td><td>每回合结束全屏遮罩，接手确认</td></tr>
+<tr><td>移动/攻击/合法高亮</td><td class="pass">✅</td><td>选中棋子 → 高亮合法移动/攻击目标</td></tr>
+<tr><td>夺旗正常结束</td><td class="pass">✅</td><td>军旗被夺 → 结束弹窗 → 再来一局/返回菜单</td></tr>
+<tr><td>存档/恢复/撤销/认输</td><td class="pass">✅</td><td>localStorage 存档；移动可撤销、交戰/偵察后不可撤销</td></tr>
+</table>
+
+<h2>2. 棋盘渲染（程序生成的 SVG，非浏览器截图）</h2>
+<div class="board-frame"><img src="board-sketch.svg" style="max-width:100%; height:auto;" alt="棋盘SVG"></div>
+<p class="meta">注：本报告无法直接运行浏览器截图；上图为引擎数据驱动的 SVG 棋盘渲染。真实界面截图请按 §7 运行后在浏览器中获取。</p>
+
+<h2>3. 测试结果（<span class="pass">56 项全部通过</span>）</h2>
+<pre>$ node --test
+# tests 56
+# pass 56
+# fail 0</pre>
+<table>
+<tr><th>测试文件</th><th>项数</th><th>覆盖</th></tr>
+<tr><td>tests/board.test.mjs</td><td>6</td><td>棋盘拓扑、铁桥/桥头、航線、部署容量</td></tr>
+<tr><td>tests/combat.test.mjs</td><td>15</td><td>30×30 矩阵 + 特殊攻防（工兵/炮垒/炮舰/战斗机/飞弹/高炮）</td></tr>
+<tr><td>tests/moves.test.mjs</td><td>11</td><td>公路/铁路/海面/航線移动、行营、炮垒/高炮/飞弹攻击</td></tr>
+<tr><td>tests/engine.test.mjs</td><td>7</td><td>布阵、交戰揭示、夺旗、暗棋、侦察、完整对局</td></tr>
+<tr><td>tests/rules-source.test.mjs</td><td>9</td><td>已确认规则 vs 假设/冲突分别测试</td></tr>
+<tr><td>tests/phase3.test.mjs</td><td>8</td><td>登陆、炮舰vs炮垒、防空拦截、侦察、认输、僵局、存檔、重复局面</td></tr>
+</table>
+
+<h2>4. 完整本地双人对局结果</h2>
+<pre>$ node demo/two-player-sim.mjs 7
+===== 最终结果 =====
+总回合：1884
+结束阶段：finished · 结束原因：flag_captured
+胜方：黑方（黑方原子弹夺取红方军旗）
+存活棋子：红 6 : 黑 12</pre>
+<p class="meta">关键步骤（示例）：回合1 红方侦察攻击黑方战斗机→守胜；回合4 黑方飞弹攻击红方炮垒→同归于尽；…；回合1884 黑方原子弹攻击红方军旗→攻胜。</p>
+
+<h2>5. 棋盘还原依据与未核实节点</h2>
+<div class="warn">
+<b>重要</b>：本阶段已下载雷鸟牌/历史实物图片 2 张，但当前模型无法直接读图，OpenCV 仅能确认「海洋居中、陆地在两侧」的整体格局。当前 <code>board.json</code> 仍为<b>文字重建布局</b>（每个节点 <code>source=textual_reconstruction</code>），未虚构已核实节点。
+</div>
+<p>需人工提供的截图清单（详见 <code>data/board.json → meta.verification.needed_from_human</code>）：</p>
+<ol>
+<li>雷鸟牌棋盘正上方平视、无阴影、无棋子的高清图。</li>
+<li>中央海域锚点/航行线位置图。</li>
+<li>铁桥与桥头准确拓扑。</li>
+<li>机场与航線黑点位置及航線走向。</li>
+<li>每方兵站/城市/行营数量与坐标。</li>
+</ol>
+
+<h2>6. 规则假设与争议清单</h2>
+<table>
+<tr><th>类型</th><th>内容</th></tr>
+<tr><td>冲突 D1</td><td>炮舰 vs 炮垒：炮垒条目「胜各军舰」 vs 炮舰条目「攻击炮垒时胜」——采<b>炮垒胜（对称）</b>，未决，待外部核实。</td></tr>
+<tr><td>假设（9 条）</td><td>同型军舰相遇双方消灭；炮垒对地雷同归于尽；飞弹攻潜艇落空；高炮对空仅针对飞机；潜艇/驱逐舰不可攻陆等。</td></tr>
+<tr><td>项目约定</td><td>登陆后按陆军移动；无子可动/重复局面三次=和棋；认输；侦察短暂揭示（ply+2）；被消灭者揭示、存活者不新增揭示；总司令阵亡不自动亮旗。</td></tr>
+</table>
+<p class="meta">完整清单见 <code>data/combat-matrix.json</code>（assumptions / conflicts）与 <code>docs/06-phase3-report.md</code>。</p>
+
+<h2>7. 运行方法</h2>
+<pre>node --test                    # 56 项测试
+node demo/two-player-sim.mjs   # 本地双人模拟对局
+python3 -m http.server 8080    # 项目根目录启动
+# 浏览器打开 http://localhost:8080/web/index.html</pre>
+
+<h2>8. 真实界面截图（待补充）</h2>
+<div class="shot">【截图占位】请在浏览器打开 <code>/web/index.html</code>，依次截取：主菜单、红方布阵、黑方布阵、对局中（己方视角）、对局中（敌方隐藏视角）、夺旗结束弹窗，粘贴至此。</div>
+
+<script>document.getElementById('ts').textContent = new Date().toLocaleString('zh-CN');</script>
+</body>
+</html>

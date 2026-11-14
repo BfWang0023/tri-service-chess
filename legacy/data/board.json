@@ -1,0 +1,2320 @@
+{
+  "meta": {
+    "status": "RECONSTRUCTED",
+    "note": "依結構性描述重建，未經實物影像核實；引擎數據驅動可替換。",
+    "rows": 11,
+    "cols": 13,
+    "red_land_cols": [
+      0,
+      4
+    ],
+    "sea_cols": [
+      5,
+      7
+    ],
+    "black_land_cols": [
+      8,
+      12
+    ],
+    "bridgeheads": [
+      "r0c4",
+      "r0c8",
+      "r10c4",
+      "r10c8"
+    ],
+    "verification": {
+      "status": "reconstructed",
+      "image_access": {
+        "board1": "tshop.r10s.com 雷鳥牌 LT-215（已下載，無法直接讀圖）",
+        "board2": "pimg.1px.tw 歷史實物（已下載，無法直接讀圖）",
+        "board3": "collections.culture.tw 臺灣歷史博物館影像（下載超時，未取得）"
+      },
+      "extracted_by_cv": "僅確認「海洋居中、陸地在兩側」的整體格局；逐點座標無法由照片可靠提取。",
+      "node_classification": {
+        "confirmed_by_text": [
+          "兵站",
+          "城市",
+          "行營",
+          "錨點",
+          "機場",
+          "鐵橋",
+          "橋頭",
+          "航線黑點"
+        ],
+        "inferred_coordinates": "全部節點之座標/數量為文字重建（source=textual_reconstruction）",
+        "occluded": "未能讀圖，無法標記被遮擋節點"
+      },
+      "needed_from_human": [
+        "雷鳥牌棋盤正上方平視、無陰影、無棋子的高清圖（或逐格標注版）",
+        "中央海域的錨點/航行線位置圖",
+        "鐵橋與橋頭的準確拓撲（橋跨幾格、橋頭在哪幾格）",
+        "機場與航線黑點的準確位置與航線走向",
+        "每方兵站/城市/行營的準確數量與座標"
+      ]
+    }
+  },
+  "nodes": {
+    "r0c0": {
+      "id": "r0c0",
+      "row": 0,
+      "col": 0,
+      "side": "red",
+      "type": "airfield",
+      "source": "textual_reconstruction"
+    },
+    "r0c1": {
+      "id": "r0c1",
+      "row": 0,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r0c2": {
+      "id": "r0c2",
+      "row": 0,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r0c3": {
+      "id": "r0c3",
+      "row": 0,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r0c4": {
+      "id": "r0c4",
+      "row": 0,
+      "col": 4,
+      "side": "red",
+      "type": "bridgehead",
+      "source": "textual_reconstruction"
+    },
+    "r0c8": {
+      "id": "r0c8",
+      "row": 0,
+      "col": 8,
+      "side": "black",
+      "type": "bridgehead",
+      "source": "textual_reconstruction"
+    },
+    "r0c9": {
+      "id": "r0c9",
+      "row": 0,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r0c10": {
+      "id": "r0c10",
+      "row": 0,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r0c11": {
+      "id": "r0c11",
+      "row": 0,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r0c12": {
+      "id": "r0c12",
+      "row": 0,
+      "col": 12,
+      "side": "black",
+      "type": "airfield",
+      "source": "textual_reconstruction"
+    },
+    "r1c0": {
+      "id": "r1c0",
+      "row": 1,
+      "col": 0,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c1": {
+      "id": "r1c1",
+      "row": 1,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c2": {
+      "id": "r1c2",
+      "row": 1,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c3": {
+      "id": "r1c3",
+      "row": 1,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c4": {
+      "id": "r1c4",
+      "row": 1,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c5": {
+      "id": "r1c5",
+      "row": 1,
+      "col": 5,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r1c6": {
+      "id": "r1c6",
+      "row": 1,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r1c7": {
+      "id": "r1c7",
+      "row": 1,
+      "col": 7,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r1c8": {
+      "id": "r1c8",
+      "row": 1,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c9": {
+      "id": "r1c9",
+      "row": 1,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c10": {
+      "id": "r1c10",
+      "row": 1,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c11": {
+      "id": "r1c11",
+      "row": 1,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r1c12": {
+      "id": "r1c12",
+      "row": 1,
+      "col": 12,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c0": {
+      "id": "r2c0",
+      "row": 2,
+      "col": 0,
+      "side": "red",
+      "type": "city",
+      "source": "textual_reconstruction"
+    },
+    "r2c1": {
+      "id": "r2c1",
+      "row": 2,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c2": {
+      "id": "r2c2",
+      "row": 2,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c3": {
+      "id": "r2c3",
+      "row": 2,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c4": {
+      "id": "r2c4",
+      "row": 2,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c5": {
+      "id": "r2c5",
+      "row": 2,
+      "col": 5,
+      "side": "red",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r2c6": {
+      "id": "r2c6",
+      "row": 2,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r2c7": {
+      "id": "r2c7",
+      "row": 2,
+      "col": 7,
+      "side": "black",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r2c8": {
+      "id": "r2c8",
+      "row": 2,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c9": {
+      "id": "r2c9",
+      "row": 2,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c10": {
+      "id": "r2c10",
+      "row": 2,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c11": {
+      "id": "r2c11",
+      "row": 2,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r2c12": {
+      "id": "r2c12",
+      "row": 2,
+      "col": 12,
+      "side": "black",
+      "type": "city",
+      "source": "textual_reconstruction"
+    },
+    "r3c0": {
+      "id": "r3c0",
+      "row": 3,
+      "col": 0,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r3c1": {
+      "id": "r3c1",
+      "row": 3,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r3c2": {
+      "id": "r3c2",
+      "row": 3,
+      "col": 2,
+      "side": "red",
+      "type": "camp",
+      "source": "textual_reconstruction"
+    },
+    "r3c3": {
+      "id": "r3c3",
+      "row": 3,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r3c4": {
+      "id": "r3c4",
+      "row": 3,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r3c5": {
+      "id": "r3c5",
+      "row": 3,
+      "col": 5,
+      "side": "red",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r3c6": {
+      "id": "r3c6",
+      "row": 3,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r3c7": {
+      "id": "r3c7",
+      "row": 3,
+      "col": 7,
+      "side": "black",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r3c8": {
+      "id": "r3c8",
+      "row": 3,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r3c9": {
+      "id": "r3c9",
+      "row": 3,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r3c10": {
+      "id": "r3c10",
+      "row": 3,
+      "col": 10,
+      "side": "black",
+      "type": "camp",
+      "source": "textual_reconstruction"
+    },
+    "r3c11": {
+      "id": "r3c11",
+      "row": 3,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r3c12": {
+      "id": "r3c12",
+      "row": 3,
+      "col": 12,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c0": {
+      "id": "r4c0",
+      "row": 4,
+      "col": 0,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c1": {
+      "id": "r4c1",
+      "row": 4,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c2": {
+      "id": "r4c2",
+      "row": 4,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c3": {
+      "id": "r4c3",
+      "row": 4,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c4": {
+      "id": "r4c4",
+      "row": 4,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c5": {
+      "id": "r4c5",
+      "row": 4,
+      "col": 5,
+      "side": "red",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r4c6": {
+      "id": "r4c6",
+      "row": 4,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r4c7": {
+      "id": "r4c7",
+      "row": 4,
+      "col": 7,
+      "side": "black",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r4c8": {
+      "id": "r4c8",
+      "row": 4,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c9": {
+      "id": "r4c9",
+      "row": 4,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c10": {
+      "id": "r4c10",
+      "row": 4,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c11": {
+      "id": "r4c11",
+      "row": 4,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r4c12": {
+      "id": "r4c12",
+      "row": 4,
+      "col": 12,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c0": {
+      "id": "r5c0",
+      "row": 5,
+      "col": 0,
+      "side": "red",
+      "type": "city",
+      "source": "textual_reconstruction"
+    },
+    "r5c1": {
+      "id": "r5c1",
+      "row": 5,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c2": {
+      "id": "r5c2",
+      "row": 5,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c3": {
+      "id": "r5c3",
+      "row": 5,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c4": {
+      "id": "r5c4",
+      "row": 5,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c5": {
+      "id": "r5c5",
+      "row": 5,
+      "col": 5,
+      "side": "red",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r5c6": {
+      "id": "r5c6",
+      "row": 5,
+      "col": 6,
+      "side": "sea",
+      "type": "air_dot",
+      "source": "textual_reconstruction"
+    },
+    "r5c7": {
+      "id": "r5c7",
+      "row": 5,
+      "col": 7,
+      "side": "black",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r5c8": {
+      "id": "r5c8",
+      "row": 5,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c9": {
+      "id": "r5c9",
+      "row": 5,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c10": {
+      "id": "r5c10",
+      "row": 5,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c11": {
+      "id": "r5c11",
+      "row": 5,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r5c12": {
+      "id": "r5c12",
+      "row": 5,
+      "col": 12,
+      "side": "black",
+      "type": "city",
+      "source": "textual_reconstruction"
+    },
+    "r6c0": {
+      "id": "r6c0",
+      "row": 6,
+      "col": 0,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c1": {
+      "id": "r6c1",
+      "row": 6,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c2": {
+      "id": "r6c2",
+      "row": 6,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c3": {
+      "id": "r6c3",
+      "row": 6,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c4": {
+      "id": "r6c4",
+      "row": 6,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c5": {
+      "id": "r6c5",
+      "row": 6,
+      "col": 5,
+      "side": "red",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r6c6": {
+      "id": "r6c6",
+      "row": 6,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r6c7": {
+      "id": "r6c7",
+      "row": 6,
+      "col": 7,
+      "side": "black",
+      "type": "anchor",
+      "source": "textual_reconstruction"
+    },
+    "r6c8": {
+      "id": "r6c8",
+      "row": 6,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c9": {
+      "id": "r6c9",
+      "row": 6,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c10": {
+      "id": "r6c10",
+      "row": 6,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c11": {
+      "id": "r6c11",
+      "row": 6,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r6c12": {
+      "id": "r6c12",
+      "row": 6,
+      "col": 12,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c0": {
+      "id": "r7c0",
+      "row": 7,
+      "col": 0,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c1": {
+      "id": "r7c1",
+      "row": 7,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c2": {
+      "id": "r7c2",
+      "row": 7,
+      "col": 2,
+      "side": "red",
+      "type": "camp",
+      "source": "textual_reconstruction"
+    },
+    "r7c3": {
+      "id": "r7c3",
+      "row": 7,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c4": {
+      "id": "r7c4",
+      "row": 7,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c5": {
+      "id": "r7c5",
+      "row": 7,
+      "col": 5,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r7c6": {
+      "id": "r7c6",
+      "row": 7,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r7c7": {
+      "id": "r7c7",
+      "row": 7,
+      "col": 7,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r7c8": {
+      "id": "r7c8",
+      "row": 7,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c9": {
+      "id": "r7c9",
+      "row": 7,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c10": {
+      "id": "r7c10",
+      "row": 7,
+      "col": 10,
+      "side": "black",
+      "type": "camp",
+      "source": "textual_reconstruction"
+    },
+    "r7c11": {
+      "id": "r7c11",
+      "row": 7,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r7c12": {
+      "id": "r7c12",
+      "row": 7,
+      "col": 12,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c0": {
+      "id": "r8c0",
+      "row": 8,
+      "col": 0,
+      "side": "red",
+      "type": "city",
+      "source": "textual_reconstruction"
+    },
+    "r8c1": {
+      "id": "r8c1",
+      "row": 8,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c2": {
+      "id": "r8c2",
+      "row": 8,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c3": {
+      "id": "r8c3",
+      "row": 8,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c4": {
+      "id": "r8c4",
+      "row": 8,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c5": {
+      "id": "r8c5",
+      "row": 8,
+      "col": 5,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r8c6": {
+      "id": "r8c6",
+      "row": 8,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r8c7": {
+      "id": "r8c7",
+      "row": 8,
+      "col": 7,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r8c8": {
+      "id": "r8c8",
+      "row": 8,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c9": {
+      "id": "r8c9",
+      "row": 8,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c10": {
+      "id": "r8c10",
+      "row": 8,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c11": {
+      "id": "r8c11",
+      "row": 8,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r8c12": {
+      "id": "r8c12",
+      "row": 8,
+      "col": 12,
+      "side": "black",
+      "type": "city",
+      "source": "textual_reconstruction"
+    },
+    "r9c0": {
+      "id": "r9c0",
+      "row": 9,
+      "col": 0,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c1": {
+      "id": "r9c1",
+      "row": 9,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c2": {
+      "id": "r9c2",
+      "row": 9,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c3": {
+      "id": "r9c3",
+      "row": 9,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c4": {
+      "id": "r9c4",
+      "row": 9,
+      "col": 4,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c5": {
+      "id": "r9c5",
+      "row": 9,
+      "col": 5,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r9c6": {
+      "id": "r9c6",
+      "row": 9,
+      "col": 6,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r9c7": {
+      "id": "r9c7",
+      "row": 9,
+      "col": 7,
+      "side": "sea",
+      "type": "sea",
+      "source": "textual_reconstruction"
+    },
+    "r9c8": {
+      "id": "r9c8",
+      "row": 9,
+      "col": 8,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c9": {
+      "id": "r9c9",
+      "row": 9,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c10": {
+      "id": "r9c10",
+      "row": 9,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c11": {
+      "id": "r9c11",
+      "row": 9,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r9c12": {
+      "id": "r9c12",
+      "row": 9,
+      "col": 12,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r10c0": {
+      "id": "r10c0",
+      "row": 10,
+      "col": 0,
+      "side": "red",
+      "type": "airfield",
+      "source": "textual_reconstruction"
+    },
+    "r10c1": {
+      "id": "r10c1",
+      "row": 10,
+      "col": 1,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r10c2": {
+      "id": "r10c2",
+      "row": 10,
+      "col": 2,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r10c3": {
+      "id": "r10c3",
+      "row": 10,
+      "col": 3,
+      "side": "red",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r10c4": {
+      "id": "r10c4",
+      "row": 10,
+      "col": 4,
+      "side": "red",
+      "type": "bridgehead",
+      "source": "textual_reconstruction"
+    },
+    "r10c8": {
+      "id": "r10c8",
+      "row": 10,
+      "col": 8,
+      "side": "black",
+      "type": "bridgehead",
+      "source": "textual_reconstruction"
+    },
+    "r10c9": {
+      "id": "r10c9",
+      "row": 10,
+      "col": 9,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r10c10": {
+      "id": "r10c10",
+      "row": 10,
+      "col": 10,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r10c11": {
+      "id": "r10c11",
+      "row": 10,
+      "col": 11,
+      "side": "black",
+      "type": "station",
+      "source": "textual_reconstruction"
+    },
+    "r10c12": {
+      "id": "r10c12",
+      "row": 10,
+      "col": 12,
+      "side": "black",
+      "type": "airfield",
+      "source": "textual_reconstruction"
+    },
+    "r0c5": {
+      "id": "r0c5",
+      "row": 0,
+      "col": 5,
+      "side": "sea",
+      "type": "bridge",
+      "source": "textual_reconstruction"
+    },
+    "r0c6": {
+      "id": "r0c6",
+      "row": 0,
+      "col": 6,
+      "side": "sea",
+      "type": "bridge",
+      "source": "textual_reconstruction"
+    },
+    "r0c7": {
+      "id": "r0c7",
+      "row": 0,
+      "col": 7,
+      "side": "sea",
+      "type": "bridge",
+      "source": "textual_reconstruction"
+    },
+    "r10c5": {
+      "id": "r10c5",
+      "row": 10,
+      "col": 5,
+      "side": "sea",
+      "type": "bridge",
+      "source": "textual_reconstruction"
+    },
+    "r10c6": {
+      "id": "r10c6",
+      "row": 10,
+      "col": 6,
+      "side": "sea",
+      "type": "bridge",
+      "source": "textual_reconstruction"
+    },
+    "r10c7": {
+      "id": "r10c7",
+      "row": 10,
+      "col": 7,
+      "side": "sea",
+      "type": "bridge",
+      "source": "textual_reconstruction"
+    }
+  },
+  "edges": {
+    "road": [
+      [
+        "r1c0",
+        "r1c1"
+      ],
+      [
+        "r1c0",
+        "r2c0"
+      ],
+      [
+        "r1c1",
+        "r1c2"
+      ],
+      [
+        "r1c1",
+        "r2c1"
+      ],
+      [
+        "r1c2",
+        "r1c3"
+      ],
+      [
+        "r1c2",
+        "r2c2"
+      ],
+      [
+        "r1c3",
+        "r1c4"
+      ],
+      [
+        "r1c3",
+        "r2c3"
+      ],
+      [
+        "r1c4",
+        "r2c4"
+      ],
+      [
+        "r1c8",
+        "r1c9"
+      ],
+      [
+        "r1c8",
+        "r2c8"
+      ],
+      [
+        "r1c9",
+        "r2c9"
+      ],
+      [
+        "r1c10",
+        "r1c9"
+      ],
+      [
+        "r1c10",
+        "r1c11"
+      ],
+      [
+        "r1c10",
+        "r2c10"
+      ],
+      [
+        "r1c11",
+        "r1c12"
+      ],
+      [
+        "r1c11",
+        "r2c11"
+      ],
+      [
+        "r1c12",
+        "r2c12"
+      ],
+      [
+        "r2c0",
+        "r2c1"
+      ],
+      [
+        "r2c0",
+        "r3c0"
+      ],
+      [
+        "r2c1",
+        "r2c2"
+      ],
+      [
+        "r2c1",
+        "r3c1"
+      ],
+      [
+        "r2c2",
+        "r2c3"
+      ],
+      [
+        "r2c2",
+        "r3c2"
+      ],
+      [
+        "r2c3",
+        "r2c4"
+      ],
+      [
+        "r2c3",
+        "r3c3"
+      ],
+      [
+        "r2c4",
+        "r2c5"
+      ],
+      [
+        "r2c4",
+        "r3c4"
+      ],
+      [
+        "r2c5",
+        "r3c5"
+      ],
+      [
+        "r2c7",
+        "r2c8"
+      ],
+      [
+        "r2c7",
+        "r3c7"
+      ],
+      [
+        "r2c8",
+        "r2c9"
+      ],
+      [
+        "r2c8",
+        "r3c8"
+      ],
+      [
+        "r2c9",
+        "r3c9"
+      ],
+      [
+        "r2c10",
+        "r2c9"
+      ],
+      [
+        "r2c10",
+        "r2c11"
+      ],
+      [
+        "r2c10",
+        "r3c10"
+      ],
+      [
+        "r2c11",
+        "r2c12"
+      ],
+      [
+        "r2c11",
+        "r3c11"
+      ],
+      [
+        "r2c12",
+        "r3c12"
+      ],
+      [
+        "r3c0",
+        "r3c1"
+      ],
+      [
+        "r3c0",
+        "r4c0"
+      ],
+      [
+        "r3c1",
+        "r3c2"
+      ],
+      [
+        "r3c1",
+        "r4c1"
+      ],
+      [
+        "r3c2",
+        "r3c3"
+      ],
+      [
+        "r3c2",
+        "r4c2"
+      ],
+      [
+        "r3c3",
+        "r3c4"
+      ],
+      [
+        "r3c3",
+        "r4c3"
+      ],
+      [
+        "r3c4",
+        "r3c5"
+      ],
+      [
+        "r3c4",
+        "r4c4"
+      ],
+      [
+        "r3c5",
+        "r4c5"
+      ],
+      [
+        "r3c7",
+        "r3c8"
+      ],
+      [
+        "r3c7",
+        "r4c7"
+      ],
+      [
+        "r3c8",
+        "r3c9"
+      ],
+      [
+        "r3c8",
+        "r4c8"
+      ],
+      [
+        "r3c9",
+        "r4c9"
+      ],
+      [
+        "r3c10",
+        "r3c9"
+      ],
+      [
+        "r3c10",
+        "r3c11"
+      ],
+      [
+        "r3c10",
+        "r4c10"
+      ],
+      [
+        "r3c11",
+        "r3c12"
+      ],
+      [
+        "r3c11",
+        "r4c11"
+      ],
+      [
+        "r3c12",
+        "r4c12"
+      ],
+      [
+        "r4c0",
+        "r4c1"
+      ],
+      [
+        "r4c0",
+        "r5c0"
+      ],
+      [
+        "r4c1",
+        "r4c2"
+      ],
+      [
+        "r4c1",
+        "r5c1"
+      ],
+      [
+        "r4c2",
+        "r4c3"
+      ],
+      [
+        "r4c2",
+        "r5c2"
+      ],
+      [
+        "r4c3",
+        "r4c4"
+      ],
+      [
+        "r4c3",
+        "r5c3"
+      ],
+      [
+        "r4c4",
+        "r4c5"
+      ],
+      [
+        "r4c4",
+        "r5c4"
+      ],
+      [
+        "r4c5",
+        "r5c5"
+      ],
+      [
+        "r4c7",
+        "r4c8"
+      ],
+      [
+        "r4c7",
+        "r5c7"
+      ],
+      [
+        "r4c8",
+        "r4c9"
+      ],
+      [
+        "r4c8",
+        "r5c8"
+      ],
+      [
+        "r4c9",
+        "r5c9"
+      ],
+      [
+        "r4c10",
+        "r4c9"
+      ],
+      [
+        "r4c10",
+        "r4c11"
+      ],
+      [
+        "r4c10",
+        "r5c10"
+      ],
+      [
+        "r4c11",
+        "r4c12"
+      ],
+      [
+        "r4c11",
+        "r5c11"
+      ],
+      [
+        "r4c12",
+        "r5c12"
+      ],
+      [
+        "r5c0",
+        "r5c1"
+      ],
+      [
+        "r5c0",
+        "r6c0"
+      ],
+      [
+        "r5c1",
+        "r5c2"
+      ],
+      [
+        "r5c1",
+        "r6c1"
+      ],
+      [
+        "r5c2",
+        "r5c3"
+      ],
+      [
+        "r5c2",
+        "r6c2"
+      ],
+      [
+        "r5c3",
+        "r5c4"
+      ],
+      [
+        "r5c3",
+        "r6c3"
+      ],
+      [
+        "r5c4",
+        "r5c5"
+      ],
+      [
+        "r5c4",
+        "r6c4"
+      ],
+      [
+        "r5c5",
+        "r6c5"
+      ],
+      [
+        "r5c7",
+        "r5c8"
+      ],
+      [
+        "r5c7",
+        "r6c7"
+      ],
+      [
+        "r5c8",
+        "r5c9"
+      ],
+      [
+        "r5c8",
+        "r6c8"
+      ],
+      [
+        "r5c9",
+        "r6c9"
+      ],
+      [
+        "r5c10",
+        "r5c9"
+      ],
+      [
+        "r5c10",
+        "r5c11"
+      ],
+      [
+        "r5c10",
+        "r6c10"
+      ],
+      [
+        "r5c11",
+        "r5c12"
+      ],
+      [
+        "r5c11",
+        "r6c11"
+      ],
+      [
+        "r5c12",
+        "r6c12"
+      ],
+      [
+        "r6c0",
+        "r6c1"
+      ],
+      [
+        "r6c0",
+        "r7c0"
+      ],
+      [
+        "r6c1",
+        "r6c2"
+      ],
+      [
+        "r6c1",
+        "r7c1"
+      ],
+      [
+        "r6c2",
+        "r6c3"
+      ],
+      [
+        "r6c2",
+        "r7c2"
+      ],
+      [
+        "r6c3",
+        "r6c4"
+      ],
+      [
+        "r6c3",
+        "r7c3"
+      ],
+      [
+        "r6c4",
+        "r6c5"
+      ],
+      [
+        "r6c4",
+        "r7c4"
+      ],
+      [
+        "r6c7",
+        "r6c8"
+      ],
+      [
+        "r6c8",
+        "r6c9"
+      ],
+      [
+        "r6c8",
+        "r7c8"
+      ],
+      [
+        "r6c9",
+        "r7c9"
+      ],
+      [
+        "r6c10",
+        "r6c9"
+      ],
+      [
+        "r6c10",
+        "r6c11"
+      ],
+      [
+        "r6c10",
+        "r7c10"
+      ],
+      [
+        "r6c11",
+        "r6c12"
+      ],
+      [
+        "r6c11",
+        "r7c11"
+      ],
+      [
+        "r6c12",
+        "r7c12"
+      ],
+      [
+        "r7c0",
+        "r7c1"
+      ],
+      [
+        "r7c0",
+        "r8c0"
+      ],
+      [
+        "r7c1",
+        "r7c2"
+      ],
+      [
+        "r7c1",
+        "r8c1"
+      ],
+      [
+        "r7c2",
+        "r7c3"
+      ],
+      [
+        "r7c2",
+        "r8c2"
+      ],
+      [
+        "r7c3",
+        "r7c4"
+      ],
+      [
+        "r7c3",
+        "r8c3"
+      ],
+      [
+        "r7c4",
+        "r8c4"
+      ],
+      [
+        "r7c8",
+        "r7c9"
+      ],
+      [
+        "r7c8",
+        "r8c8"
+      ],
+      [
+        "r7c9",
+        "r8c9"
+      ],
+      [
+        "r7c10",
+        "r7c9"
+      ],
+      [
+        "r7c10",
+        "r7c11"
+      ],
+      [
+        "r7c10",
+        "r8c10"
+      ],
+      [
+        "r7c11",
+        "r7c12"
+      ],
+      [
+        "r7c11",
+        "r8c11"
+      ],
+      [
+        "r7c12",
+        "r8c12"
+      ],
+      [
+        "r8c0",
+        "r8c1"
+      ],
+      [
+        "r8c0",
+        "r9c0"
+      ],
+      [
+        "r8c1",
+        "r8c2"
+      ],
+      [
+        "r8c1",
+        "r9c1"
+      ],
+      [
+        "r8c2",
+        "r8c3"
+      ],
+      [
+        "r8c2",
+        "r9c2"
+      ],
+      [
+        "r8c3",
+        "r8c4"
+      ],
+      [
+        "r8c3",
+        "r9c3"
+      ],
+      [
+        "r8c4",
+        "r9c4"
+      ],
+      [
+        "r8c8",
+        "r8c9"
+      ],
+      [
+        "r8c8",
+        "r9c8"
+      ],
+      [
+        "r8c9",
+        "r9c9"
+      ],
+      [
+        "r8c10",
+        "r8c9"
+      ],
+      [
+        "r8c10",
+        "r8c11"
+      ],
+      [
+        "r8c10",
+        "r9c10"
+      ],
+      [
+        "r8c11",
+        "r8c12"
+      ],
+      [
+        "r8c11",
+        "r9c11"
+      ],
+      [
+        "r8c12",
+        "r9c12"
+      ],
+      [
+        "r9c0",
+        "r9c1"
+      ],
+      [
+        "r9c1",
+        "r9c2"
+      ],
+      [
+        "r9c2",
+        "r9c3"
+      ],
+      [
+        "r9c3",
+        "r9c4"
+      ],
+      [
+        "r9c8",
+        "r9c9"
+      ],
+      [
+        "r9c10",
+        "r9c9"
+      ],
+      [
+        "r9c10",
+        "r9c11"
+      ],
+      [
+        "r9c11",
+        "r9c12"
+      ],
+      [
+        "r0c1",
+        "r1c1"
+      ],
+      [
+        "r10c1",
+        "r9c1"
+      ],
+      [
+        "r0c2",
+        "r1c2"
+      ],
+      [
+        "r10c2",
+        "r9c2"
+      ],
+      [
+        "r0c3",
+        "r1c3"
+      ],
+      [
+        "r10c3",
+        "r9c3"
+      ],
+      [
+        "r0c4",
+        "r1c4"
+      ],
+      [
+        "r10c4",
+        "r9c4"
+      ],
+      [
+        "r0c8",
+        "r1c8"
+      ],
+      [
+        "r10c8",
+        "r9c8"
+      ],
+      [
+        "r0c9",
+        "r1c9"
+      ],
+      [
+        "r10c9",
+        "r9c9"
+      ],
+      [
+        "r0c10",
+        "r1c10"
+      ],
+      [
+        "r10c10",
+        "r9c10"
+      ],
+      [
+        "r0c11",
+        "r1c11"
+      ],
+      [
+        "r10c11",
+        "r9c11"
+      ]
+    ],
+    "railway": [
+      [
+        "r0c0",
+        "r0c1"
+      ],
+      [
+        "r0c1",
+        "r0c2"
+      ],
+      [
+        "r0c2",
+        "r0c3"
+      ],
+      [
+        "r0c3",
+        "r0c4"
+      ],
+      [
+        "r0c4",
+        "r0c5"
+      ],
+      [
+        "r0c5",
+        "r0c6"
+      ],
+      [
+        "r0c6",
+        "r0c7"
+      ],
+      [
+        "r0c7",
+        "r0c8"
+      ],
+      [
+        "r0c8",
+        "r0c9"
+      ],
+      [
+        "r0c9",
+        "r0c10"
+      ],
+      [
+        "r0c10",
+        "r0c11"
+      ],
+      [
+        "r0c11",
+        "r0c12"
+      ],
+      [
+        "r10c0",
+        "r10c1"
+      ],
+      [
+        "r10c1",
+        "r10c2"
+      ],
+      [
+        "r10c2",
+        "r10c3"
+      ],
+      [
+        "r10c3",
+        "r10c4"
+      ],
+      [
+        "r10c4",
+        "r10c5"
+      ],
+      [
+        "r10c5",
+        "r10c6"
+      ],
+      [
+        "r10c6",
+        "r10c7"
+      ],
+      [
+        "r10c7",
+        "r10c8"
+      ],
+      [
+        "r10c8",
+        "r10c9"
+      ],
+      [
+        "r10c9",
+        "r10c10"
+      ],
+      [
+        "r10c10",
+        "r10c11"
+      ],
+      [
+        "r10c11",
+        "r10c12"
+      ]
+    ],
+    "sea_line": [
+      [
+        "r1c5",
+        "r1c6"
+      ],
+      [
+        "r1c5",
+        "r2c5"
+      ],
+      [
+        "r1c6",
+        "r1c7"
+      ],
+      [
+        "r1c6",
+        "r2c6"
+      ],
+      [
+        "r1c7",
+        "r2c7"
+      ],
+      [
+        "r2c5",
+        "r2c6"
+      ],
+      [
+        "r2c5",
+        "r3c5"
+      ],
+      [
+        "r2c6",
+        "r2c7"
+      ],
+      [
+        "r2c6",
+        "r3c6"
+      ],
+      [
+        "r2c7",
+        "r3c7"
+      ],
+      [
+        "r3c5",
+        "r3c6"
+      ],
+      [
+        "r3c5",
+        "r4c5"
+      ],
+      [
+        "r3c6",
+        "r3c7"
+      ],
+      [
+        "r3c6",
+        "r4c6"
+      ],
+      [
+        "r3c7",
+        "r4c7"
+      ],
+      [
+        "r4c5",
+        "r4c6"
+      ],
+      [
+        "r4c5",
+        "r5c5"
+      ],
+      [
+        "r4c6",
+        "r4c7"
+      ],
+      [
+        "r4c6",
+        "r5c6"
+      ],
+      [
+        "r4c7",
+        "r5c7"
+      ],
+      [
+        "r5c5",
+        "r5c6"
+      ],
+      [
+        "r5c5",
+        "r6c5"
+      ],
+      [
+        "r5c6",
+        "r5c7"
+      ],
+      [
+        "r5c6",
+        "r6c6"
+      ],
+      [
+        "r5c7",
+        "r6c7"
+      ],
+      [
+        "r6c5",
+        "r6c6"
+      ],
+      [
+        "r6c5",
+        "r7c5"
+      ],
+      [
+        "r6c6",
+        "r6c7"
+      ],
+      [
+        "r6c6",
+        "r7c6"
+      ],
+      [
+        "r6c7",
+        "r7c7"
+      ],
+      [
+        "r7c5",
+        "r7c6"
+      ],
+      [
+        "r7c5",
+        "r8c5"
+      ],
+      [
+        "r7c6",
+        "r7c7"
+      ],
+      [
+        "r7c6",
+        "r8c6"
+      ],
+      [
+        "r7c7",
+        "r8c7"
+      ],
+      [
+        "r8c5",
+        "r8c6"
+      ],
+      [
+        "r8c5",
+        "r9c5"
+      ],
+      [
+        "r8c6",
+        "r8c7"
+      ],
+      [
+        "r8c6",
+        "r9c6"
+      ],
+      [
+        "r8c7",
+        "r9c7"
+      ],
+      [
+        "r9c5",
+        "r9c6"
+      ],
+      [
+        "r9c6",
+        "r9c7"
+      ]
+    ],
+    "air": [
+      [
+        "r0c0",
+        "r5c6",
+        "r10c12"
+      ],
+      [
+        "r10c0",
+        "r5c6",
+        "r0c12"
+      ],
+      [
+        "r0c0",
+        "r0c12"
+      ],
+      [
+        "r10c0",
+        "r10c12"
+      ]
+    ],
+    "air_lines": {
+      "diag_main": [
+        "r0c0",
+        "r5c6",
+        "r10c12"
+      ],
+      "diag_anti": [
+        "r10c0",
+        "r5c6",
+        "r0c12"
+      ],
+      "top": [
+        "r0c0",
+        "r0c12"
+      ],
+      "bottom": [
+        "r10c0",
+        "r10c12"
+      ]
+    },
+    "air_line_cells": {
+      "diag_main": [
+        "r0c0",
+        "r1c1",
+        "r2c2",
+        "r3c3",
+        "r3c4",
+        "r4c5",
+        "r5c6",
+        "r6c7",
+        "r7c8",
+        "r8c9",
+        "r8c10",
+        "r9c11",
+        "r10c12"
+      ],
+      "diag_anti": [
+        "r10c0",
+        "r9c1",
+        "r8c2",
+        "r7c3",
+        "r7c4",
+        "r6c5",
+        "r5c6",
+        "r4c7",
+        "r3c8",
+        "r2c9",
+        "r2c10",
+        "r1c11",
+        "r0c12"
+      ],
+      "top": [
+        "r0c0",
+        "r0c1",
+        "r0c2",
+        "r0c3",
+        "r0c4",
+        "r0c5",
+        "r0c6",
+        "r0c7",
+        "r0c8",
+        "r0c9",
+        "r0c10",
+        "r0c11",
+        "r0c12"
+      ],
+      "bottom": [
+        "r10c0",
+        "r10c1",
+        "r10c2",
+        "r10c3",
+        "r10c4",
+        "r10c5",
+        "r10c6",
+        "r10c7",
+        "r10c8",
+        "r10c9",
+        "r10c10",
+        "r10c11",
+        "r10c12"
+      ]
+    }
+  }
+}

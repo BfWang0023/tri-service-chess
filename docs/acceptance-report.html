@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陆海空三军棋 · 第四阶段验收报告（视觉重构 + 航空系统）</title>
+<style>
+  body { font-family: system-ui,"PingFang SC","Microsoft YaHei",sans-serif; background:#0c1a22; color:#e8eef0;
+         max-width:1000px; margin:0 auto; padding:26px 20px; line-height:1.65; }
+  h1 { border-bottom:3px solid #d9a441; padding-bottom:8px; color:#d9a441; }
+  h2 { margin-top:32px; border-left:5px solid #d9a441; padding-left:10px; }
+  table { border-collapse:collapse; width:100%; margin:10px 0; }
+  th,td { border:1px solid #24404c; padding:6px 10px; font-size:13px; text-align:left; }
+  th { background:#16303a; }
+  code { background:#12262e; padding:1px 5px; border-radius:4px; font-size:12px; }
+  pre { background:#0b171c; color:#cfe0e6; padding:12px; border-radius:8px; overflow-x:auto; font-size:12px; }
+  .meta { color:#8fa3ab; font-size:13px; }
+  .shot { border:1px solid #24404c; border-radius:8px; margin:14px 0; background:#0b171c; }
+  .shot img { width:100%; display:block; border-radius:8px 8px 0 0; }
+  .shot .cap { padding:7px 12px; font-size:13px; color:#8fa3ab; }
+  .ok { color:#5cce8a; font-weight:700; }
+  .warn { background:#2a2416; border:1px solid #5c4a1e; border-radius:8px; padding:10px 14px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:720px){ .grid2 { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<h1>《陆海空三军棋》第四阶段验收报告</h1>
+<div class="meta">视觉重构 + 航空系统专项 · 历史棋盘 v2.0.0 · 生成时间 <span id="ts"></span></div>
+
+<h2>1. 验收结论</h2>
+<table>
+<tr><th>验收目标</th><th>状态</th><th>证据</th></tr>
+<tr><td>棋子清晰、美观、易操作</td><td class="ok">✅</td><td>棋子半径增大 68%、军种图标、阵营配色、棋背纹理、状态反馈</td></tr>
+<tr><td>海上合法航空线路全部可用</td><td class="ok">✅</td><td>66 停靠点 1 连通分量；20 局模拟 195 次飞机移动、0 非法</td></tr>
+<tr><td>战斗机可击败侦察机</td><td class="ok">✅</td><td>矩阵 attacker_wins；模拟中 6/6 击杀；浏览器实测</td></tr>
+<tr><td>原有功能保持正常</td><td class="ok">✅</td><td>56 项主测试 + 56 项旧网格版测试全部通过</td></tr>
+</table>
+
+<h2>2. 真实浏览器截图（Playwright + 系统 Chrome）</h2>
+<div class="shot"><img src="screenshots/10-menu.png"><div class="cap">1. 主菜单（本地双人 / 三档 AI / AI 对 AI / 规则）</div></div>
+<div class="shot"><img src="screenshots/11-setup.png"><div class="cap">2. 红方布阵完成（大棋子、军种图标、等级角标、步阵托盘）</div></div>
+<div class="shot"><img src="screenshots/12-board-initial.png"><div class="cap">3. 完整棋盘初始画面（海洋蓝、陆地暖沙、多线型、特殊节点标识）</div></div>
+<div class="shot"><img src="screenshots/13-select-navy.png"><div class="cap">4. 选中海军棋子（合法移动绿色高亮）</div></div>
+<div class="shot"><img src="screenshots/14-fighter-airlines.png"><div class="cap">5. 选中战斗机 + 航空线路模式 + 航空调试面板（合法目的地 / 可攻击目标）</div></div>
+<div class="shot"><img src="screenshots/15-fighter-vs-scout.png"><div class="cap">6. 战斗机击败侦察机（红战斗 FNW 攻黑侦察 FSW，侦察机被消灭）</div></div>
+<div class="shot"><img src="screenshots/16-zoom.png"><div class="cap">7. 局部放大（滚轮缩放 + 拖拽平移后）</div></div>
+
+<h2>3. 航空系统审计与修复</h2>
+<h3>3.1 根因</h3>
+<ul>
+<li><b>已修复的真实缺陷</b>：<code>fighterAttackTargets</code> 仅用航線下方地面/海面投影，<b>遗漏同航線的空中黑点</b>，导致战斗机/侦察机无法把敌方飞机识别为目标 → 即「战斗机无法攻击侦察机」。</li>
+<li><b>移动本身经审计正常</b>：66 个空中停靠点全部在运行图中，1 个连通分量，单次直飞可达 5–15 站；视觉 air_lane 与引擎站对 104=104 完全一致；陆海军不阻挡。</li>
+<li>视觉重构中一度遗漏布阵按钮监听器，浏览器实测发现并即时修复。</li>
+</ul>
+<h3>3.2 横向连通性补丁（第 3/4 行西东边缘）</h3>
+<p>审计发现 <b>4 对空中停靠点视觉同排相邻却未连通</b>：A3-1↔AW3、A3-6↔AE3、A4-1↔AW5、A4-6↔AE5（dx≈88–92、dy≤1）。原因是冻结图 v2.0.0 的 H3.1/H4.1 未包含西/东边缘空点，而其余各行均连通。已在引擎层以 <code>AIR_PATCH</code> 补齐这 4 条水平航段（<b>不改 data/board.json</b>，graphEdges 仍 271 边）。实测航空线 104→108 条，AW3 可直达 A3-1。</p>
+<div class="shot"><img src="screenshots/17-air-gap-fixed.png"><div class="cap">8. 航空横向补丁生效（AW3 与 A3-1 之间已连通，选中战斗机显示该航段为运动线）</div></div>
+<h3>3.3 中间横线 + 战斗机击杀后移动</h3>
+<p>海面中排（y≈600）只有西/东边缘空点 AW4/AE4，冻结图无横向航段，已补 <code>HMID = [AW4, AE4]</code> 中间横线（航空线 108→109）。另：战斗机击杀<b>空中目标</b>后现飞抵目标所在黑点（A1-3 击杀 A1-2 侦察机 → 战斗机停在 A1-2）；空对地/海仍为飞越不移动。</p>
+<div class="shot"><img src="screenshots/18-fighter-moves-to-target.png"><div class="cap">9. 战斗机击杀侦察机后移动到目标格（A1-2）</div></div>
+<h3>3.4 海面边缘补点 + 取消点击自动居中</h3>
+<p>海面 M1/M3 行各仅有中间 4 点，缺西/东边缘各 2 点（两条跨海铁路桥下方），共 4 点。已在引擎层补 M1-0/M1-5/M3-0/M3-5（海面节点 29→33，海路恢复完整梅花桩，不改 data/board.json）。另按反馈移除「点击棋子自动居中」，保留滚轮缩放/拖拽/双击重置。</p>
+<div class="shot"><img src="screenshots/19-sea-edge-patch.png"><div class="cap">10. 海面边缘补点（M1/M3 东西两侧已补齐，梅花桩海路完整）</div></div>
+<p class="meta">第 1、6 列竖向航線在行 2–3 之间断开（V1.1 止于 A2-1、V1.2 起于 A5-1 等）为冻结图真实拓扑，不修改；飞机经横向航線绕行可达。</p>
+
+<h2>4. 战斗机 vs 侦察机 实测</h2>
+<table>
+<tr><th>项</th><th>结果</th></tr>
+<tr><td>矩阵 fighter→scout</td><td><code>attacker_wins</code></td></tr>
+<tr><td>矩阵 scout→fighter</td><td><code>defender_wins</code></td></tr>
+<tr><td>引擎 A1-3 战斗攻 A1-2 侦察</td><td>侦察机被消灭，战斗机存活</td></tr>
+<tr><td>浏览器 FNW 战斗攻 FSW 侦察</td><td>侦察机被消灭（红30:黑28）</td></tr>
+<tr><td>20 局 AI 模拟遭遇</td><td>6 次，战斗机击杀 6 次</td></tr>
+</table>
+
+<h2>5. 测试结果</h2>
+<pre>$ npm test
+# tests 57
+# pass 57
+# fail 0
+$ npm run test:legacy
+# tests 56
+# pass 56
+# fail 0</pre>
+<p class="meta">主项目 57 项 = 航空 12 + 战斗矩阵 15 + 规则来源 9 + 历史棋盘 9 + 数据完整性 7 + AI 5。</p>
+
+<h2>6. 20 局航空模拟</h2>
+<pre>$ node demo/air-sim.mjs 20
+结束局数: 20/20  ·  未结束: 0
+非法动作: 0  ·  异常: 0
+总回合: 3208  ·  平均: 160.4
+飞机移动: 195
+空战次数: 174
+战斗机↔侦察机 遭遇: 6（战斗机获胜击杀 6）
+防空拦截(飞机被击落): 5</pre>
+
+<h2>7. 视觉重构要点</h2>
+<ul>
+<li><b>棋子</b>：半径按相邻节点最小间距推导（约 21px，原 12.5）；陆军三角/海军船体/空军机翼/军旗图标；红黑阵营配色；等级角标；织纹棋背+阵营宝石；选中(金环)/可移动(绿)/可攻击(红)/受威胁(橙角标) 四种状态。</li>
+<li><b>棋盘</b>：海洋沉稳蓝、陆地暖沙；公路/铁路/铁桥/海路/航空线区分；线路显示模式（全部/陆军/海军/空军/智能）；智能模式选中后突出相关线路、淡化其余。</li>
+<li><b>视角</b>：自动适配、滚轮缩放、拖拽平移、双击/按钮重置、选中自动聚焦。</li>
+<li>历史棋盘几何关系不变（仍由 graphEdges 渲染）。</li>
+</ul>
+
+<h2>8. 尚未解决 / 说明</h2>
+<div class="warn">
+冻结图 v2.0.0 竖向断开为真实拓扑（不修改）；「转弯需停留」采用单次行动仅一条航線口径；缩放为 SVG 变换、极端缩放文字偏小（已限 0.25–4）。完整清单见 <code>docs/11-air-audit.md</code>。
+</div>
+
+<h2>9. 跨平台打包（在别的电脑上也能打开）</h2>
+<p>一条命令 <code>python3 make-dist.py</code> 产出四个可分发文件：</p>
+<table>
+<tr><th>产物</th><th>平台</th><th>体积</th><th>说明</th></tr>
+<tr><td><code>三军棋.html</code></td><td>Windows / macOS / Linux</td><td>304 KB</td><td>单文件，双击用浏览器打开，零安装零联网</td></tr>
+<tr><td><code>三军棋-便携版.zip</code></td><td>同上</td><td>54 KB</td><td>html + 启动器 + 使用说明</td></tr>
+<tr><td><code>TriserviceChess-Windows-免安装版.zip</code></td><td>Windows 10/11 x64</td><td>115 MB</td><td>真 <code>.exe</code>（Electron 33.2.0 运行时 + 游戏）</td></tr>
+<tr><td><code>三军棋-macOS.app.zip</code></td><td>macOS 11+</td><td>0.5 MB</td><td>原生 Swift + WKWebView <code>.app</code></td></tr>
+</table>
+<h3>9.1 单文件 HTML（file:// 直开实测）</h3>
+<div class="shot"><img src="screenshots/20-singlefile-portable.png"><div class="cap">11. dist/三军棋.html 用 file:// 直接打开（无服务器、无 Node）：60 枚棋子、173 节点、33 个海上节点，无报错</div></div>
+<h3>9.2 Electron 桌面窗口（Windows 包内真实字节自检）</h3>
+<p>把 Windows 包解压出来的 <code>resources/app</code> 原样交给同版本 Electron 运行，自检脚本依次点击「本地双人对局 → 自动布阵 → 完成布阵 → 确认接手 →（黑方同样操作）」，然后截图并退出：</p>
+<pre>SMOKE {"title":"陆海空三军棋 …","svg":true,"boardNodes":173,"piecesOnBoard":60,
+       "piecesInState":60,"occupancy":60,"phase":"playing","turn":"red","errors":null,
+       "steps":{...全部 true}}</pre>
+<div class="shot"><img src="screenshots/21-electron-window.png"><div class="cap">12. Electron 独立窗口跑通开局（红方在下，60 枚棋子，回合已进入 playing）</div></div>
+<h3>9.3 打包细节与未验证项</h3>
+<ul>
+<li>Windows 运行时不自行编译，直接取 Electron 官方预编译包，并用官方 <code>SHASUMS256.txt</code> 校验 SHA-256。</li>
+<li>归档内文件名一律 ASCII（首版用系统 <code>zip</code> 时中文名退化成 <code>?????</code>，已改为 Python <code>zipfile</code> + UTF-8 标志位）。</li>
+<li>包内 <code>game.html</code> 与 <code>dist/三军棋.html</code> 哈希完全一致，<code>SEA_PATCH_NODES</code> / <code>HMID</code> 补丁确认在内。</li>
+<li><b>未在真实 Windows 机器上双击过 .exe</b>（本环境无 Windows / 无 wine）；已验证的是外壳代码、同版本 Electron 全流程跑通、字节一致与官方校验和。</li>
+<li><b>未生成 .dmg</b>：<code>hdiutil</code> 在构建沙箱里被拒（<code>newfs_apfs: Operation not permitted</code>），改用 <code>.app.zip</code>，在普通 macOS 机器上一条 <code>hdiutil create</code> 即可补出 dmg。</li>
+</ul>
+<p class="meta">完整记录见 <code>docs/12-packaging.md</code>。</p>
+
+<script>document.getElementById('ts').textContent = new Date().toLocaleString('zh-CN');</script>
+</body>
+</html>

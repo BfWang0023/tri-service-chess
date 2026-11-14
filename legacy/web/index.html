@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陆海空三军棋（Tri-Service Chess）</title>
+  <style>
+    :root {
+      --bg: #e9e4d8; --panel: #fffdf8; --ink: #2b2b2b; --muted: #8a8578;
+      --red: #c0392b; --black: #2c3e50; --accent: #b8860b;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+           background: var(--bg); color: var(--ink); }
+    button { font-family: inherit; cursor: pointer; }
+
+    /* 通用屏幕 */
+    .screen { display: none; padding: 16px; max-width: 1180px; margin: 0 auto; }
+    .screen.active { display: block; }
+
+    /* 菜单 / 规则 */
+    .menu-center { text-align: center; padding-top: 8vh; }
+    .menu-center h1 { font-size: 34px; letter-spacing: 2px; margin: 0 0 6px; }
+    .menu-center .sub { color: var(--muted); margin-bottom: 34px; }
+    .menu-btn { display: block; width: 260px; margin: 10px auto; padding: 13px;
+                font-size: 17px; border: 1px solid #cbb; background: var(--panel); border-radius: 8px; }
+    .menu-btn:hover { background: #f3ecdf; border-color: var(--accent); }
+
+    /* 顶栏 */
+    .topbar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+              border-bottom: 1px solid #d5cfc0; padding-bottom: 10px; margin-bottom: 10px; }
+    .topbar h1 { font-size: 18px; margin: 0; }
+    .topbar .spacer { flex: 1; }
+    .pill { padding: 4px 10px; border-radius: 999px; background: #fff; border: 1px solid #ccc; font-size: 13px; }
+    .pill.red { background: #fbeae7; border-color: var(--red); }
+    .pill.black { background: #eef1f4; border-color: var(--black); }
+
+    /* 棋盘容器 */
+    #board-wrap { overflow: auto; border: 1px solid #d5cfc0; border-radius: 8px; background: #fffdf8; }
+    svg#board { display: block; }
+    svg .node { cursor: pointer; }
+    svg .piece { cursor: pointer; }
+    svg .hl-move { stroke: #27ae60; stroke-width: 3.5; fill: rgba(39,174,96,.15); }
+    svg .hl-atk { stroke: #e74c3c; stroke-width: 3.5; fill: rgba(231,76,60,.15); }
+    svg .sel { stroke: #f1c40f; stroke-width: 3.5; }
+
+    /* 布阵托盘 */
+    #tray { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+    .tray-piece { display: flex; flex-direction: column; align-items: center; padding: 4px 6px;
+                  border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; min-width: 46px; }
+    .tray-piece .chip { width: 30px; height: 30px; border-radius: 50%; color: #fff;
+                        display: flex; align-items: center; justify-content: center;
+                        font-size: 10px; font-weight: 600; }
+    .tray-piece .nm { font-size: 11px; }
+    .tray-piece.sel { outline: 2px solid var(--accent); }
+
+    /* 底部操作条 */
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .actions button, .traybar button { padding: 7px 12px; font-size: 13px; border: 1px solid #cbb;
+                                       background: #fff; border-radius: 6px; }
+    .actions button:hover, .traybar button:hover { border-color: var(--accent); }
+    .danger { color: var(--red); border-color: var(--red) !important; }
+
+    /* 提示 */
+    #toast { position: fixed; left: 50%; top: 18px; transform: translateX(-50%);
+             background: rgba(20,20,20,.92); color: #fff; padding: 9px 18px; border-radius: 8px;
+             font-size: 14px; opacity: 0; transition: opacity .25s; pointer-events: none; z-index: 50; }
+    #toast.show { opacity: 1; }
+
+    /* 交接遮罩 */
+    #handoff { position: fixed; inset: 0; background: rgba(20,20,20,.96); color: #fff;
+               display: none; flex-direction: column; align-items: center; justify-content: center; z-index: 40; }
+    #handoff.show { display: flex; }
+    #handoff h2 { font-size: 30px; margin: 0 0 8px; }
+    #handoff p { color: #ccc; margin: 0 0 24px; }
+    #handoff button { padding: 13px 34px; font-size: 18px; border-radius: 8px; border: none; background: #b8860b; color: #fff; }
+
+    /* 结束弹窗 */
+    #gameover { position: fixed; inset: 0; background: rgba(20,20,20,.7); display: none;
+                align-items: center; justify-content: center; z-index: 45; }
+    #gameover.show { display: flex; }
+    #gameover .card { background: #fff; border-radius: 12px; padding: 26px 34px; text-align: center; }
+    #gameover h2 { margin: 0 0 10px; }
+    #gameover .btns { display: flex; gap: 10px; justify-content: center; margin-top: 16px; }
+
+    /* 规则页 */
+    .rules-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+    .rules-tabs button { padding: 7px 14px; border: 1px solid #cbb; background: #fff; border-radius: 6px; }
+    .rules-tabs button.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .rule-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+    .rule-card { border: 1px solid #ddd; border-radius: 8px; padding: 9px; background: #fff; font-size: 12px; }
+    .rule-card b { display: block; font-size: 14px; margin-bottom: 3px; }
+    .rule-card .chip { display: inline-block; width: 24px; height: 24px; border-radius: 50%; color: #fff;
+                       text-align: center; line-height: 24px; font-size: 11px; margin-right: 6px; }
+    .stat-line { font-size: 13px; color: #555; margin-top: 8px; }
+    details { margin-top: 8px; }
+    summary { cursor: pointer; font-size: 13px; color: #555; }
+  </style>
+</head>
+<body>
+  <!-- 菜单 -->
+  <div id="screen-menu" class="screen active">
+    <div class="menu-center">
+      <h1>陆海空三军棋</h1>
+      <div class="sub">Tri-Service Chess · 台湾传统三军棋 · 本地双人</div>
+      <button class="menu-btn" id="btn-start">开始新对局</button>
+      <button class="menu-btn" id="btn-rules">规则说明</button>
+    </div>
+  </div>
+
+  <!-- 规则说明 -->
+  <div id="screen-rules" class="screen">
+    <div class="topbar"><h1>规则说明</h1><div class="spacer"></div>
+      <button id="btn-rules-back">返回菜单</button></div>
+    <div class="rules-tabs" id="rules-tabs"></div>
+    <div class="rule-grid" id="rules-grid"></div>
+    <div class="stat-line" id="rules-note"></div>
+  </div>
+
+  <!-- 对局（布阵 + 对战共用） -->
+  <div id="screen-game" class="screen">
+    <div class="topbar">
+      <h1>陆海空三军棋</h1>
+      <span class="pill" id="phase-pill">布阵</span>
+      <span class="pill" id="turn-pill">红方</span>
+      <span id="stat-pill" class="pill">存活 30:30</span>
+      <div class="spacer"></div>
+      <button id="btn-save">保存</button>
+      <button id="btn-restore">恢复</button>
+      <button id="btn-undo">撤销</button>
+      <button id="btn-resign" class="danger">认输</button>
+      <button id="btn-menu">返回菜单</button>
+    </div>
+
+    <div id="board-wrap"><svg id="board"></svg></div>
+
+    <div id="traybar">
+      <div class="actions" id="setup-actions">
+        <span class="pill" id="setup-hint">红方布阵</span>
+        <button id="btn-auto">自动布阵</button>
+        <button id="btn-reset-setup">重新布阵</button>
+        <button id="btn-finish-setup">完成布阵</button>
+      </div>
+      <div id="tray"></div>
+    </div>
+
+    <div class="actions" id="play-actions" style="display:none">
+      <span class="pill" id="play-hint">点击己方棋子查看行动</span>
+    </div>
+  </div>
+
+  <!-- 交接遮罩 -->
+  <div id="handoff"><h2 id="handoff-title">请交接</h2><p id="handoff-msg"></p>
+    <button id="handoff-btn">确认接手</button></div>
+
+  <!-- 结束弹窗 -->
+  <div id="gameover"><div class="card">
+    <h2 id="go-title">对局结束</h2><p id="go-msg"></p>
+    <div class="btns">
+      <button id="go-restart">再来一局</button>
+      <button id="go-menu">返回菜单</button>
+    </div>
+  </div></div>
+
+  <div id="toast"></div>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

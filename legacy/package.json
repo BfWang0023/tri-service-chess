@@ -1,0 +1,12 @@
+{
+  "name": "tri-service-chess",
+  "version": "0.3.0",
+  "description": "陆海空三军棋（Tri-Service Chess）—— 独立双人策略棋类游戏",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "demo": "node demo/two-player-sim.mjs",
+    "sim": "node demo/two-player-sim.mjs"
+  },
+  "private": true
+}
